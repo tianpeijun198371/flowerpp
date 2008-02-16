@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.course.model.Master"
+                table="C_MASTER_TAB"
+                >
+
+                <id
+                        name="masterID"
+                        type="int"
+                        column="MASTERID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">MasterID</param>
+                        </generator>
+
+                </id>
+
+                <property
+                        name="masterCode"
+                        type="java.lang.String"
+                        column="MASTERCODE"
+                        not-null="true"
+                        length="50"
+                        />
+                <property
+                        name="name"
+                        type="java.lang.String"
+                        column="NAME"
+                        not-null="true"
+                        length="100"
+                        />
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="1000"
+                        />
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="1"
+                        />
+
+                <property
+                        name="orgID"
+                        type="int"
+                        column="ORGID"
+                        length="22"
+                        />
+
+
+                <property
+                        name="aspID"
+                        type="int"
+                        column="ASPID"
+                        length="22"
+                        />
+
+                <property
+                        name="key"
+                        type="java.lang.String"
+                        column="KEYWORD"
+                        length="30"
+                        />
+                <property
+                        name="creator"
+                        type="int"
+                        column="CREATOR"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="establishDate"
+                        type="java.util.Date"
+                        column="ESTABLISHDATE"
+                        length="7"
+                        />
+                <property
+                        name="modifyDate"
+                        type="java.sql.Date"
+                        column="MODIFYDATE"
+                        length="7"
+                        />
+                <property
+                        name="plan"
+                        type="java.lang.String"
+                        column="PLANNING"
+                        length="1000"
+                        />
+                <property
+                        name="catalogID"
+                        type="int"
+                        column="CATALOGID"
+                        length="22"
+                        />
+                <property
+                        name="objectID"
+                        type="int"
+                        column="OBJECTID"
+                        length="22"
+                        />
+                <property
+                        name="period"
+                        type="float"
+                        column="PERIOD"
+                        length="6"
+                        />
+                <property
+                        name="credit"
+                        type="float"
+                        column="CREDIT"
+                        length="6"
+                        />
+                <property
+                        name="status"
+                        type="java.lang.String"
+                        column="STATUS"
+                        length="1"
+                        />
+                <property
+                        name="operator"
+                        type="java.lang.String"
+                        column="OPERATOR"
+                        length="50"
+                        />
+                <!-- Associations -->
+        </class>
+</hibernate-mapping>
+

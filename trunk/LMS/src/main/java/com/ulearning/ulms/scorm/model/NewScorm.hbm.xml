@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.scorm.model.NewScorm"
+                table="LMS_SCORM_TAB"
+                >
+
+                <id name="id" type="int" column="id">
+                        <generator class="sequence">
+                                <param name="sequence">LMS_SCORM_SEQ</param>
+                        </generator>
+                </id>
+
+
+                <property
+                        name="relationID"
+                        not-null="true"
+                        />
+                <property
+                        name="type"
+                        not-null="true"
+                        />
+                <property
+                        name="name"
+                        not-null="true"
+                        />
+                <property
+                        name="reference"
+                        />
+                <property
+                        name="summary"
+                        />
+                <property
+                        name="version"
+                        not-null="true"
+                        />
+                <property
+                        name="maxGrade"
+                        />
+                <property
+                        name="gradeMethod"
+                        />
+                <property
+                        name="maxAttempt"
+                        />
+                <property
+                        name="updateFreq"
+                        />
+                <property
+                        name="md5hash"
+                        />
+                <property
+                        name="launch"
+                        />
+                <property
+                        name="skipView"
+                        />
+                <property
+                        name="hideBrowse"
+                        />
+                <property
+                        name="hideToc"
+                        />
+                <property
+                        name="hideNav"
+                        />
+                <property
+                        name="auto"
+                        />
+                <property
+                        name="popup"
+                        />
+                <property
+                        name="options"
+                        />
+                <property
+                        name="width"
+                        />
+                <property
+                        name="height"
+                        />
+                <property
+                        name="createDate"
+                        />
+                <property
+                        name="lastUpdateDate"
+                        />
+                <!-- Associations -->
+
+        </class>
+</hibernate-mapping>

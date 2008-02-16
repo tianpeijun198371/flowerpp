@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.content.model.ContentServerModel"
+                table="R_CONTENTSERVER_TAB"
+                >
+
+                <id
+                        name="contentServerID"
+                        type="int"
+                        column="CONTENTSERVERID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">contentServerID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="name"
+                        type="java.lang.String"
+                        column="NAME"
+                        not-null="true"
+                        length="500"
+                        />
+                <property
+                        name="host"
+                        type="java.lang.String"
+                        column="HOST"
+                        not-null="true"
+                        length="100"
+                        />
+                <property
+                        name="port"
+                        type="java.lang.String"
+                        column="PORT"
+                        not-null="true"
+                        length="64"
+                        />
+                <property
+                        name="physicalPath"
+                        type="java.lang.String"
+                        column="PHYSICALPATH"
+                        not-null="true"
+                        length="500"
+                        />
+                <property
+                        name="virtualPath"
+                        type="java.lang.String"
+                        column="VIRTUALPATH"
+                        not-null="true"
+                        length="500"
+                        />
+                <property
+                        name="createDate"
+                        type="java.util.Date"
+                        column="CREATEDATE"
+                        length="7"
+                        />
+                <property
+                        name="lastModDate"
+                        type="java.util.Date"
+                        column="LASTMODDATE"
+                        length="7"
+                        />
+                <property
+                        name="isDefault"
+                        type="java.lang.String"
+                        column="isDefault"
+                        length="1"
+                        />
+
+                <property
+                        name="remark1"
+                        type="java.lang.String"
+                        column="REMARK1"
+                        length="150"
+                        />
+                <property
+                        name="remark2"
+                        type="java.lang.String"
+                        column="REMARK2"
+                        length="150"
+                        />
+                <property
+                        name="remark3"
+                        type="java.lang.String"
+                        column="REMARK3"
+                        length="150"
+                        />
+                <property
+                        name="status"
+                        type="java.lang.String"
+                        column="STATUS"
+                        length="1"
+                        />
+
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

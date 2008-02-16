@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.admin.post.model.PostTutorialModel"
+               table="TM_PostTutorial_Tab">
+
+                <id name="postTutorialID" type="int" column="PostTutorialID">
+                        <generator class="sequence">
+                                <param name="sequence">postTutorialID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="relationID"
+                        column="relationID"
+                        type="int"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="tutorialID"
+                        column="tutorialID"
+                        type="int"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="type"
+                        column="type"
+                        type="int"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="sort"
+                        column="sort"
+                        type="int"
+                        not-null="true"
+                        length="22"
+                        />
+        </class>
+</hibernate-mapping>

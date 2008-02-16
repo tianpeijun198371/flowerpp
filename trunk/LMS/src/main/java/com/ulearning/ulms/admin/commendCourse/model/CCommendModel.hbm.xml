@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.ulearning.ulms.admin.commendCourse.model.CCommendModel"
+    table="C_CommendCourse_Tab"
+>
+
+    <id
+        name="ccourseID"
+        type="int"
+        column="ccourseID"
+    >
+        <generator class="sequence">
+        <param name="sequence">ccourseid</param>
+        </generator>
+    </id>
+
+    <property
+        name="name"
+        type="java.lang.String"
+        column="name"
+        not-null="true"
+        length="50"
+    />
+    <property
+        name="beginTime"
+        type="java.util.Date"
+        column="beginTime"
+        length="23"
+    />
+    <property
+        name="abstractStr"
+        type="java.lang.String"
+        column="abstractStr"
+        length="500"
+    />
+    <property
+        name="endTime"
+        type="java.util.Date"
+        column="endTime"
+        length="23"
+    />
+    <property
+        name="aimStu"
+        type="java.lang.String"
+        column="aimStu"
+        length="20"
+    />
+    <property
+        name="courseAim"
+        type="java.lang.String"
+        column="courseAim"
+        length="100"
+    />
+    <property
+        name="period"
+        type="java.lang.String"
+        column="period"
+        length="10"
+    />
+    <property
+        name="beriefInfo"
+        type="java.lang.String"
+        column="beriefInfo"
+        length="255"
+    />
+    <property
+        name="courseType"
+        type="java.lang.String"
+        column="courseType"
+        length="1"
+    />
+
+   <property
+        name="studyType"
+        type="java.lang.String"
+        column="studyType"
+        length="1"
+    />
+    <property
+        name="publishTime"
+        type="java.util.Date"
+        column="publishTime"
+        length="23"
+    />
+     <property
+        name="formerCourse"
+        type="java.lang.String"
+        column="formerCourse"
+        length="100"
+    />
+    <property
+        name="afterCourse"
+        type="java.lang.String"
+        column="afterCourse"
+        length="23"
+    />
+    <property
+        name="courseValue"
+        type="java.lang.String"
+        column="courseValue"
+        length="100"
+    />
+    <property
+        name="monthType"
+        type="java.lang.String"
+        column="monthType"
+        length="2"
+    />
+    <property
+        name="orgId"
+        type="int"
+        column="orgID"
+        length="10"
+    />
+    <property
+        name="displayed"
+        type="int"
+        column="displayed"
+        length="1"
+    />
+   <property
+        name="description"
+        type="java.lang.String"
+        column="description"
+        length="255"
+    />
+    <property
+        name="desc0"
+        type="java.lang.String"
+        column="desc0"
+        length="50"
+    />
+    <property
+        name="desc1"
+        type="java.lang.String"
+        column="desc1"
+        length="50"
+    />
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

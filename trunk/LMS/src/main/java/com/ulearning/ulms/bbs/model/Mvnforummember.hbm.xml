@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+<class name="com.ulearning.ulms.bbs.model.Mvnforummember"  table="MVNFORUMMEMBER">
+<id column="MEMBERID" name="memberid" type="int">
+<generator class="native" >
+                <param name="sequence">memberid</param>
+        </generator>
+</id>
+<property column="MEMBERNAME" length="30" name="membername" not-null="true" type="java.lang.String"/>
+<property column="MEMBERPASSWORD" length="200" name="memberpassword" not-null="true" type="java.lang.String"/>
+<property column="MEMBERFIRSTEMAIL" length="60" name="memberfirstemail" not-null="true" type="java.lang.String"/>
+<property column="MEMBEREMAIL" length="60" name="memberemail" not-null="true" type="java.lang.String"/>
+<property column="MEMBEREMAILVISIBLE" length="5" name="memberemailvisible" not-null="true" type="java.lang.Short"/>
+<property column="MEMBERNAMEVISIBLE" length="5" name="membernamevisible" not-null="true" type="java.lang.Short"/>
+<property column="MEMBERFIRSTIP" length="20" name="memberfirstip" not-null="true" type="java.lang.String"/>
+<property column="MEMBERLASTIP" length="20" name="memberlastip" not-null="true" type="java.lang.String"/>
+<property column="MEMBERVIEWCOUNT" length="10" name="memberviewcount" not-null="true" type="java.lang.Integer"/>
+<property column="MEMBERPOSTCOUNT" length="10" name="memberpostcount" not-null="true" type="java.lang.Integer"/>
+<property column="MEMBERCREATIONDATE" length="26" name="membercreationdate" not-null="true" type="java.util.Date"/>
+<property column="MEMBERMODIFIEDDATE" length="26" name="membermodifieddate" not-null="true" type="java.util.Date"/>
+<property column="MEMBEREXPIREDATE" length="26" name="memberexpiredate" not-null="true" type="java.util.Date"/>
+<property column="MEMBERLASTLOGON" length="26" name="memberlastlogon" not-null="true" type="java.util.Date"/>
+<property column="MEMBEROPTION" length="10" name="memberoption" not-null="true" type="java.lang.Integer"/>
+<property column="MEMBERSTATUS" length="10" name="memberstatus" not-null="true" type="java.lang.Integer"/>
+<property column="MEMBERACTIVATECODE" length="40" name="memberactivatecode"  type="java.lang.String"/>
+<property column="MEMBERTEMPPASSWORD" length="40" name="membertemppassword"  type="java.lang.String"/>
+<property column="MEMBERMESSAGECOUNT" length="10" name="membermessagecount" not-null="true" type="java.lang.Integer"/>
+<property column="MEMBERMESSAGEOPTION" length="10" name="membermessageoption" not-null="true" type="java.lang.Integer"/>
+<property column="MEMBERPOSTSPERPAGE" length="5" name="memberpostsperpage" not-null="true" type="java.lang.Short"/>
+<property column="MEMBERWARNCOUNT" length="5" name="memberwarncount" not-null="true" type="java.lang.Short"/>
+<property column="MEMBERVOTECOUNT" length="10" name="membervotecount" not-null="true" type="java.lang.Integer"/>
+<property column="MEMBERVOTETOTALSTARS" length="10" name="membervotetotalstars" not-null="true" type="java.lang.Integer"/>
+<property column="MEMBERREWARDPOINTS" length="10" name="memberrewardpoints" not-null="true" type="java.lang.Integer"/>
+<property column="MEMBERTITLE" length="250" name="membertitle"  type="java.lang.String"/>
+<property column="MEMBERTIMEZONE" length="10" name="membertimezone" not-null="true" type="java.lang.Integer"/>
+<property column="MEMBERSIGNATURE" length="250" name="membersignature"  type="java.lang.String"/>
+<property column="MEMBERAVATAR" length="200" name="memberavatar"  type="java.lang.String"/>
+<property column="MEMBERSKIN" length="70" name="memberskin"  type="java.lang.String"/>
+<property column="MEMBERLANGUAGE" length="70" name="memberlanguage"  type="java.lang.String"/>
+<property column="MEMBERFIRSTNAME" length="70" name="memberfirstname"  type="java.lang.String"/>
+<property column="MEMBERLASTNAME" length="70" name="memberlastname"  type="java.lang.String"/>
+<property column="MEMBERGENDER" length="5" name="membergender" not-null="true" type="java.lang.Short"/>
+<property column="MEMBERBIRTHDAY" length="10" name="memberbirthday" not-null="true" type="java.util.Date"/>
+<property column="MEMBERADDRESS" length="150" name="memberaddress"  type="java.lang.String"/>
+<property column="MEMBERCITY" length="70" name="membercity"  type="java.lang.String"/>
+<property column="MEMBERSTATE" length="70" name="memberstate"  type="java.lang.String"/>
+<property column="MEMBERCOUNTRY" length="70" name="membercountry"  type="java.lang.String"/>
+<property column="MEMBERPHONE" length="40" name="memberphone"  type="java.lang.String"/>
+<property column="MEMBERMOBILE" length="40" name="membermobile" type="java.lang.String"/>
+<property column="MEMBERFAX" length="40" name="memberfax"  type="java.lang.String"/>
+<property column="MEMBERCAREER" length="50" name="membercareer"  type="java.lang.String"/>
+<property column="MEMBERHOMEPAGE" length="200" name="memberhomepage"  type="java.lang.String"/>
+<property column="MEMBERYAHOO" length="70" name="memberyahoo"  type="java.lang.String"/>
+<property column="MEMBERAOL" length="70" name="memberaol"  type="java.lang.String"/>
+<property column="MEMBERICQ" length="70" name="membericq"  type="java.lang.String"/>
+<property column="MEMBERMSN" length="70" name="membermsn"  type="java.lang.String"/>
+<property column="MEMBERCOOLLINK1" length="200" name="membercoollink1"  type="java.lang.String"/>
+<property column="MEMBERCOOLLINK2" length="200" name="membercoollink2"  type="java.lang.String"/>
+<property column="MEMBERJIFEN"  name="memberjifen"  type="java.lang.Integer"/>
+</class>
+</hibernate-mapping>

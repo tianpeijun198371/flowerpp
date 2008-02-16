@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.content.schoolbook.model.MTeachinstorTab" table="M_TEACHINSTOR_TAB">
+                <id column="TCINID" name="id" type="long">
+                        <generator class="sequence"/>
+                </id>
+                <property column="TCINDATE" length="26" name="tcindate" type="timestamp"/>
+                <property column="TCINOPERATOR" length="50" name="tcinoperator" type="string"/>
+                <property column="TCINMEMO" length="200" name="tcinmemo" type="string"/>
+                <property column="TCINAUDMARK" length="10" name="tcinaudmark" type="integer"/>
+                <property column="TCINAUDMAN" length="50" name="tcinaudman" type="string"/>
+                <property column="REMARK1" length="50" name="remark1" type="string"/>
+                <property column="REMARK2" length="50" name="remark2" type="string"/>
+                <property column="REMARK3" length="50" name="remark3" type="string"/>
+        </class>
+</hibernate-mapping>

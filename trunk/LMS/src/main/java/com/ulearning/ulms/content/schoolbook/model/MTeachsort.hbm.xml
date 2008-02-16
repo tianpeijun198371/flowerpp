@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.content.schoolbook.model.MTeachsort" table="M_TEACHSORT">
+                <id column="TCSTID" name="id" type="long">
+                        <generator class="sequence">
+                                <param name="sequence">TCSTID</param>
+                        </generator>
+                </id>
+                <property column="BSIFID" length="10" name="bsifid" type="integer"/>
+                <property column="BSIFBOOKNAME" length="200" name="bsifbookname" type="string"/>
+                <property column="TCSTPRICE" length="6" name="tcstprice" type="float"/>
+                <property column="TCSTQUANTITY" length="6" name="tcstquantity" type="integer"/>
+                <property column="TCSTTOTAL" length="8" name="tcsttotal" type="float"/>
+                <property column="REMARK1" length="50" name="remark1" type="string"/>
+                <property column="REMARK2" length="50" name="remark2" type="string"/>
+                <property column="REMARK3" length="50" name="remark3" type="string"/>
+        </class>
+</hibernate-mapping>

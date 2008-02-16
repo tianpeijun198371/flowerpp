@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the MIDdlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/mIDdlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.evaluate.model.ERecordModel"
+                table="E_ERecord_Tab">
+                <id
+                        name="eRecordID"
+                        type="java.lang.Integer"
+                        column="ERECORDID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">eRecordID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="userID"
+                        type="int"
+                        column="USERID"
+                        not-null="true"
+                        />
+
+                <property
+                        name="point"
+                        type="int"
+                        column="POINT"
+                        not-null="true"
+                        />
+
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

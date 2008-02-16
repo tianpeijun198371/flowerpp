@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.finance.model.ForganAccountModel"
+                table="F_OrganAccount_TAB"
+                >
+
+
+                <id
+                        name="oacotId"
+                        type="int"
+                        column="oAcotID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">oacotId</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="orgId"
+                        type="int"
+                        column="OrgID"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="oacotOrganName"
+                        type="java.lang.String"
+                        column="oAcotOrganName"
+                        length="100"
+                        />
+                <property
+                        name="oacotTotal"
+                        type="double"
+                        column="oAcotTotal"
+                        length="8"
+                        />
+                <property
+                        name="oacotStatus"
+                        type="int"
+                        column="oAcotStatus"
+                        length="10"
+                        />
+                <property
+                        name="oacotLastUpdate"
+                        type="java.util.Date"
+                        column="oAcotLastUpdate"
+                        length="23"
+                        />
+                <property
+                        name="oacotLastUpUser"
+                        type="java.lang.String"
+                        column="oAcotLastUpUser"
+                        length="20"
+                        />
+                <property
+                        name="oacotDescription"
+                        type="java.lang.String"
+                        column="oAcotDescription"
+                        length="200"
+                        />
+                <property
+                        name="oacotRemark1"
+                        type="java.lang.String"
+                        column="oAcotRemark1"
+                        length="150"
+                        />
+                <property
+                        name="oacotRemark2"
+                        type="java.lang.String"
+                        column="oAcotRemark2"
+                        length="150"
+                        />
+
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

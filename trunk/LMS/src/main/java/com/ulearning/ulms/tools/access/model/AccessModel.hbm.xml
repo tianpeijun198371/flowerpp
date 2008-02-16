@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.access.model.AccessModel"
+                table="TM_ACCESS_TAB"
+                >
+
+
+                <id
+                        name="accessID"
+                        type="java.lang.Integer"
+                        column="ACCESSID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">AccessID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="userID"
+                        column="USERID"
+                        type="java.lang.Integer"
+                        />
+                <property
+                        name="createDateTime"
+                        column="CREATEDATETIME"
+                        type="java.util.Date"
+                        length="7"
+                        />
+                <property
+                        name="moduleID"
+                        column="MODULEID"
+                        type="java.lang.Integer"
+                        />
+                <property
+                        name="courseID"
+                        column="COURSEID"
+                        type="java.lang.Integer"
+                        />
+                <property
+                        name="certificateID"
+                        column="CERTIFICATEID"
+                        type="java.lang.Integer"
+                        />
+                <property
+                        name="projectID"
+                        column="PROJECTID"
+                        type="java.lang.Integer"
+                        />
+                <property
+                        name="orgID"
+                        column="ORGID"
+                        type="java.lang.Integer"
+                        />
+                <property
+                        name="ip"
+                        column="IP"
+                        type="java.lang.String"
+                        length="15"
+                        />
+                <property
+                        name="userTime"
+                        column="USERTIME"
+                        type="java.lang.Double"
+                        length="22"
+                        />
+
+
+                <!-- Associations -->
+                <!-- derived association(s) for compound key -->
+                <!-- end of derived association(s) -->
+
+
+        </class>
+</hibernate-mapping>

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.match.model.FrequenceModel"
+                table="M_FREQUENCE_TAB"
+                >
+                <id
+                        name="frequenceid"
+                        type="int"
+                        column="FREQUENCEID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">FREQUENCEID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="frequencemode"
+                        type="java.lang.String"
+                        column="FREQUENCEMODE"
+                        not-null="true"
+                        length="1"
+                        >
+                </property>
+
+                <property
+                        name="frequencedate"
+                        type="java.util.Date"
+                        column="FREQUENCEDATE"
+                        length="7"
+                        >
+                </property>
+
+                <property
+                        name="frequencescope"
+                        type="java.lang.String"
+                        column="FREQUENCESCOPE"
+                        not-null="true"
+                        length="1"
+                        >
+                </property>
+
+                <property
+                        name="startdate"
+                        type="java.util.Date"
+                        column="STARTDATE"
+                        length="7"
+                        >
+                </property>
+
+                <property
+                        name="repeattimes"
+                        type="java.util.Date"
+                        column="REPEATTIMES"
+                        length="7"
+                        >
+                </property>
+
+                <property
+                        name="finishdate"
+                        type="java.util.Date"
+                        column="FINISHDATE"
+                        length="7"
+                        >
+                </property>
+
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

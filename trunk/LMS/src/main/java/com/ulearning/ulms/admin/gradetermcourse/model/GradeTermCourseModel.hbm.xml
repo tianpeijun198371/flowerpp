@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.admin.gradetermcourse.model.GradeTermCourseModel"
+                table="T_GRADETERMCOURSE_TAB"
+                >
+
+                <id
+                        name="gradeCID"
+                        column="GRADECID"
+                        type="java.lang.Integer"
+                        length="22"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">GradeCID</param>
+                        </generator>
+                </id>
+
+
+                <property
+                        name="gradeTID"
+                        column="GRADETID"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+
+                <property
+                        name="courseName"
+                        column="COURSENAME"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="description"
+                        column="DESCRIPTION"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="remark1"
+                        column="REMARK1"
+                        type="java.lang.String"
+                        length="50"
+                        />
+
+                <property
+                        name="remark2"
+                        column="REMARK2"
+                        type="java.lang.String"
+                        length="50"
+                        />
+
+                <property
+                        name="remark3"
+                        column="REMARK3"
+                        type="java.lang.String"
+                        length="50"
+                        />
+
+        </class>
+
+
+</hibernate-mapping>

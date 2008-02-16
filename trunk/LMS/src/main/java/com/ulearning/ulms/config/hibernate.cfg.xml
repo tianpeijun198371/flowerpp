@@ -1,0 +1,209 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-2.0.dtd">
+<hibernate-configuration>
+        <session-factory>
+
+                <property name="hibernate.connection.url">
+                        jdbc:oracle:thin:@192.168.0.201:1521:ora902
+                </property>
+                <property name="hibernate.connection.driver_class">
+                        oracle.jdbc.driver.OracleDriver
+                </property>
+                <property name="hibernate.connection.username">
+                        ulms_xln
+                </property>
+                <property name="hibernate.connection.password">
+                        ulms_xln
+                </property>
+                <property name="dialect">net.sf.hibernate.dialect.OracleDialect</property>
+
+                <property name="connection.pool.size">2</property>
+                <property name="statement_cache.size">25</property>
+                <property name="jdbc.fetch_size">50</property>
+                <property name="jdbc.batch_size">30</property>
+
+                <property name="show_sql">true</property>
+                <property name="connection.provider_class">net.sf.hibernate.connection.DBCPConnectionProvider</property>
+                <property name="dbcp.maxActive">100</property>
+                <!-- 当连接池中的连接已经被耗尽的时候，DBCP将怎样处理( 0 = 失败, 1 = 等待, 2= 增长)  -->
+                <property name="dbcp.whenExhaustedAction">2</property>
+                <property name="dbcp.maxWait">120000</property>
+                <property name="dbcp.maxIdle">10</property>
+                <property name="dbcp.ps.maxActive">100</property>
+                <property name="dbcp.ps.whenExhaustedAction">1</property>
+                <property name="dbcp.ps.maxWait">120000</property>
+                <property name="dbcp.ps.maxIdle">100</property>
+                <!--
+                <property name="hibernate.cache.provider_class">net.sf.ehcache.hibernate.Provider</property>
+                <property name="hibernate.cache.use_query_cache">true</property>
+                -->
+                <property name="hibernate.transaction.factory_class">
+                        net.sf.hibernate.transaction.JDBCTransactionFactory
+                </property>
+
+                <!-- Database URL
+
+                <property name="connection.datasource">java:/ULMS_DS</property>
+                <property name="dialect">net.sf.hibernate.dialect.Oracle9Dialect</property>
+
+                <property name="hibernate.jdbc.fetch_size">100</property>
+                <property name="hibernate.jdbc.batch">50</property>
+
+                <property name="hibernate.show_sql">False</property>
+
+                <property name="hibernate.use_outer_join">True</property>
+
+                <property name="hibernate.transaction.factory_class">net.sf.hibernate.transaction.JDBCTransactionFactory</property>
+
+                -->
+                <!-- Following is the mappoing file for the class -->
+
+                <mapping resource="com/ulearning/ulms/tools/announcement/model/AnnouncementModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/assignment/model/AssignmentModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/assignment/assignprocess/model/AssignProcessModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/book/model/BookModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/doc/document/model/DocumentModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/doc/doccontent/model/DocContentModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/access/model/AccessModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/test/question/base/model/QuestionModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/test/question/choiceitem/model/ChoiceItemModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/report/custom/tasktime/model/TaskTimeModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/report/custom/report/model/ReportModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/delete/model/DeleteModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/webconfig/webcustom/model/WebCustomModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/backup/model/BackupModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/user/model/UserModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/organ/model/OrganModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/organ/model/OrganUserModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/model/CourseContentModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/test/paper/model/PaperModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/test/paper/model/PaperQuestionModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/test/paper/model/AnswerModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/test/grade/model/PaperUserModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/plan/model/PlanModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/discussion/model/DiscussModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/discussion/model/ForumModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/core/security/model/RoleModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/core/security/model/UserRoleModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/calendar/model/EventModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/calendar/model/PreferenceModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/message/model/MessageModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/message/model/MessageUserModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/lmslog/model/LmslogModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/lmslog/model/LmslogOperDescModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/lmslog/model/LmslogTypeDescModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/lmslog/model/LmslogUserDescModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/core/security/model/RolepermModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/courseconfig/model/CreditCourseWiseModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/courseconfig/model/GradeWeightingFactorModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/sysconfig/model/SysConfigModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/sysconfig/model/SmtpServerModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/sysconfig/model/AutoInformModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/common/model/HistoryModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/common/model/ScoreHibernateModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/fluxManage/model/FluxModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/test/grade/model/GradeModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/model/Master.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/model/Catalog.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/model/Course.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/model/CourseUser.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/model/SecUserRoleModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/colsignup/colsign/model/ColSignModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/colsignup/colsigndetail/model/ColSignDetailModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/colsignup/colstudent/model/ColStudentModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/certificate/model/CertModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/certificate/model/CertCourseModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/graduation/model/GraduationModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/topTen/model/TopTenModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/blog/form/AccountForm.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/blog/form/ArticleForm.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/blog/form/FeedbackForm.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/blog/form/CategoryForm.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/commendCourse/model/CCommendModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/match/model/FrequenceModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/match/model/ItermModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/match/model/MatchClassModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/match/model/MatchItermModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/match/model/MatchModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/answerquestion/model/AnswerQuestionModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/answerquestion/model/AQCatalogModel.hbm.xml"/>
+                <!--<mapping resource="com/ulearning/ulms/tools/HeaderPagManager/model/HeaderpictureModel.hbm.xml"/>-->
+                <mapping resource="com/ulearning/ulms/admin/post/model/PostModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/post/model/PostDirModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/post/model/PostTutorialModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/finance/model/FincomeTypeModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/finance/model/ForganAccountDetailModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/finance/model/ForganAccountModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/finance/model/FpayoutTypeModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/finance/model/FuserAccountDetailModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/finance/model/FuserAccountModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/course/test/Exambatch/model/ExambatchModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/user/group/model/GroupModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/user/group/model/UserGroupModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/schoolwork/model/SchoolWorkModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/schoolwork/model/StuWorkModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/schoolwork/model/TeaWorkModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/evaluate/model/EAccessModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/evaluate/model/StayTimeModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/evaluate/model/ERecordRankModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/evaluate/model/ERecordRankStandardModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/evaluate/model/ERecordPointConversionModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/evaluate/model/ERecordModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/evaluate/model/FeedBackModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/evaluate/model/FeedBackOptionModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/portal/fuctionconfig/model/FunctionConfigModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/newdocument/model/NewDocumentModel.hbm.xml"/>
+
+                <mapping resource="com/ulearning/ulms/content/model/ContentCatalogModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/model/ContentConfigModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/model/ContentLanguageModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/model/ContentModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/model/ContentServerModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/model/ContentTypeModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/model/ScormItemModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/model/ScormUserScoModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/model/CourseContentTypeModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/cert/Certificate/model/CertificateModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/GCertificate/model/GCertificateModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/certificate/model/CertPlanModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/cerdangan/model/CerDanganModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/cerdangan/model/CerNewdanganTab.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/model/RPhysicsresModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/model/RResuserecordModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/ugroupship/model/UGroupShipModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/uteachergroup/model/UTeacherGroupModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/gradetermcourse/model/GradeTermCourseModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/gradeterm/model/GradeTermModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/gradeusercourse/model/GradeUserCourseModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/admin/gradeuser/model/GradeUserModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/resuserecord/model/ResuserecordModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/schoolbook/model/MTeachbeseinfoTab.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/schoolbook/model/MTeachmailbillTab.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/schoolbook/model/MTeachmainstor.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/schoolbook/model/MTeachsort.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/content/schoolbook/model/MTeachstorItemTab.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/report/general/model/RChargeitemModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/report/general/model/RCertreportModel.hbm.xml"/>
+
+                <mapping resource="com/ulearning/ulms/video/model/VideoOrganModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/video/model/VideouserModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/video/model/VideoModel.hbm.xml"/>
+
+                <mapping resource="com/ulearning/ulms/scorm/model/NewScorm.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/scorm/model/NewScormScoes.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/scorm/model/NewScormScoesTrack.hbm.xml"/>
+
+                <mapping resource="com/ulearning/ulms/tools/study/info/model/StudyInfoModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/tools/meeting/model/MeetingModel.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/familyeducation/model/FamilyEducationInfo.hbm.xml"/>
+                <mapping resource="com/ulearning/ulms/familyeducation/model/FamilyEducationTeacherProfile.hbm.xml"/>
+                 
+                <mapping resource="com/ulearning/ulms/tools/visit/model/VisitModel.hbm.xml"/>
+
+		        <mapping resource="com/ulearning/ulms/bbs/model/Mvnforummember.hbm.xml"/>
+		
+		        <mapping resource="com/ulearning/ulms/bbs/model/Mvnforumthread.hbm.xml"/>
+
+        </session-factory>
+</hibernate-configuration>

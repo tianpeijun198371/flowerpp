@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.tools.schoolwork.model.StuWorkModel"
+                table="T_UserSW_Tab">
+
+                <id
+                        name="userswId"
+                        type="int"
+                        column="USERSWID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">userswId</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="swId"
+                        type="int"
+                        column="SWID"
+                        length="5"
+                        />
+
+                <property
+                        name="userId"
+                        type="java.lang.String"
+                        column="USERID"
+                        not-null="true"
+                        length="50"
+                        />
+
+                <property
+                        name="orgID"
+                        type="java.lang.String"
+                        column="ORGID"
+                        not-null="true"
+                        length="50"
+                        />
+
+                <property
+                        name="link"
+                        type="java.lang.String"
+                        column="LINK"
+                        length="255"
+                        />
+
+                <property
+                        name="linkTitle"
+                        type="java.lang.String"
+                        column="LINKTITLE"
+                        length="200"
+                        />
+
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="100"
+                        />
+
+                <property
+                        name="createDate"
+                        type="java.util.Date"
+                        column="CREATEDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="modifyDate"
+                        type="java.util.Date"
+                        column="MODIFYDATE"
+                        length="7"
+                        />
+
+
+                <!-- Associations -->
+
+        </class>
+</hibernate-mapping>

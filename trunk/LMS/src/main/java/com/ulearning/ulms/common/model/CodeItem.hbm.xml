@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.common.model.CodeItem"
+                table="S_CODEITEM_TAB"
+                >
+
+                <id
+                        name="codeitemid"
+                        type="int"
+                        column="CODEITEMID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">
+                                        codeitemID
+                                </param>
+                        </generator>
+                </id>
+
+                <property
+                        name="codeid"
+                        type="int"
+                        column="CODEID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="type1"
+                        type="int"
+                        column="TYPE"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="name1"
+                        type="java.lang.String"
+                        column="NAME"
+                        not-null="true"
+                        length="50"
+                        />
+                <property
+                        name="value1"
+                        type="java.lang.String"
+                        column="VALUE"
+                        not-null="true"
+                        length="50"
+                        />
+                <property
+                        name="orderindex"
+                        type="int"
+                        column="ORDERINDEX"
+                        length="22"
+                        />
+                <property
+                        name="comments"
+                        type="java.lang.String"
+                        column="COMMENTS"
+                        length="200"
+                        />
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="200"
+                        />
+
+                <!-- Associations -->
+
+                <!-- bi-directional many-to-one association to ScodeTab -->
+
+
+        </class>
+</hibernate-mapping>

@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.finance.model.FuserAccountModel"
+                table="F_UserAccount_TAB"
+                >
+
+
+                <id
+                        name="uacotId"
+                        type="int"
+                        column="uAcotID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">uacotId</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="userId"
+                        type="int"
+                        column="UserID"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="uacotUserName"
+                        type="java.lang.String"
+                        column="uAcotUserName"
+                        length="50"
+                        />
+                <property
+                        name="uacotTotal"
+                        type="double"
+                        column="uAcotTotal"
+                        length="8"
+                        />
+                <property
+                        name="uacotStatus"
+                        type="int"
+                        column="uAcotStatus"
+                        length="10"
+                        />
+                <property
+                        name="uacotlastUpDate"
+                        type="java.util.Date"
+                        column="uAcotlastUpDate"
+                        length="23"
+                        />
+                <property
+                        name="uacotLastUser"
+                        type="java.lang.String"
+                        column="uAcotLastUser"
+                        length="50"
+                        />
+                <property
+                        name="uacotDescription"
+                        type="java.lang.String"
+                        column="uAcotDescription"
+                        length="200"
+                        />
+                <property
+                        name="uacotRemark1"
+                        type="java.lang.String"
+                        column="uAcotRemark1"
+                        length="150"
+                        />
+                <property
+                        name="uacotRemark2"
+                        type="java.lang.String"
+                        column="uAcotRemark2"
+                        length="150"
+                        />
+
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

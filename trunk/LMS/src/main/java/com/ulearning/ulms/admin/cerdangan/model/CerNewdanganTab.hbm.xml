@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.admin.cerdangan.model.CerNewdanganTab" schema="liaoxx"
+               table="CER_NEWDANGAN_TAB">
+                <id column="DANGANID" name="danganid" type="java.lang.Integer">
+                        <generator class="sequence">
+                                <param name="sequence">danganid</param>
+                        </generator>
+                </id>
+                <property column="CERTNAME" length="200" name="certname" not-null="true" type="java.lang.String"/>
+                <property column="TIME" length="50" name="time" type="java.lang.String"/>
+                <property column="STUDENTS" length="200" name="students" type="java.lang.String"/>
+                <property column="MAINCONTENT" length="32700" name="maincontent" type="java.lang.String"/>
+                <property column="NUMBERS" length="10" name="number" type="java.lang.Integer"/>
+                <property column="DATES" length="50" name="date" type="java.lang.String"/>
+                <property column="DAYCHARGE" length="6" name="daycharge" type="java.lang.Float"/>
+                <property column="CHARGE" length="50" name="charge" type="java.lang.String"/>
+                <property column="TRAINPLACE" length="100" name="trainplace" type="java.lang.String"/>
+                <property column="TRAINTYPE" length="50" name="traintype" type="java.lang.String"/>
+                <property column="PROJTYPE" length="20" name="projtype" type="java.lang.String"/>
+                <property column="TRAINLEVER" length="20" name="trainlever" type="java.lang.String"/>
+                <property column="PROJHOST" length="100" name="projhost" type="java.lang.String"/>
+                <property column="JOINER" length="200" name="joiner" type="java.lang.String"/>
+                <property column="MANAGE" length="100" name="manage" type="java.lang.String"/>
+                <property column="REMARK2" length="200" name="remark2" type="java.lang.String"/>
+                <property column="REMARK3" length="200" name="remark3" type="java.lang.String"/>
+                <property column="REMARK1" length="100" name="remark1" type="java.lang.String"/>
+        </class>
+</hibernate-mapping>

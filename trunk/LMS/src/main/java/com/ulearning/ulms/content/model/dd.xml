@@ -1,0 +1,920 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type='text/xsl' href='MessageLog.xsl'?>
+<Log FirstSessionID="1" LastSessionID="1">
+        <Message Date="2005-7-7" Time="14:18:18" DateTime="2005-07-07T06:18:18.799Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">hi,���,С��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:18:27" DateTime="2005-07-07T06:18:27.737Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">���</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:19:08" DateTime="2005-07-07T06:19:08.989Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">�����Ѿ�����ݿ⵹����.bs�Ĳ���Ҳ�õ�</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:19:46" DateTime="2005-07-07T06:19:46.584Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">�������,��Ҫ��ָ��һ��.�����Ȱ����ǵİ�װ��ȥ
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:20:05" DateTime="2005-07-07T06:20:05.835Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��л��:)</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:20:36" DateTime="2005-07-07T06:20:36.868Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">ָ�����ҵ���</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:20:54" DateTime="2005-07-07T06:20:54.837Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">
+                        http://172.20.29.202:9090/admin/secure/logon.do
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:21:17" DateTime="2005-07-07T06:21:17.510Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">
+                        ���Ѿ�����websphere�Ĺ��������.��һ����ʲô?
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:21:36" DateTime="2005-07-07T06:21:36.011Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">���ұ��⾳�ѳ��򷢹�ȥ�������ˣ�����</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:21:45" DateTime="2005-07-07T06:21:45.277Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��,�õ���</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:22:50" DateTime="2005-07-07T06:22:50.202Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">����ҵĵ�ַ�򲻿�</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:23:17" DateTime="2005-07-07T06:23:17.875Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��Ȼ�򲻿���,�������ǵ�����.</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:23:35" DateTime="2005-07-07T06:23:35.782Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">������Ҿ���Ĳ���,��4�������.</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:24:09" DateTime="2005-07-07T06:24:09.846Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">
+                        ������ǲ����,��һ�´�һ�������Լ���websphere
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:24:15" DateTime="2005-07-07T06:24:15.409Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">��ȫ�ԣ�JAAS���ã�J2C��֤���</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:24:33" DateTime="2005-07-07T06:24:33.535Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">ok</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:25:02" DateTime="2005-07-07T06:25:02.489Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">�½�һ���ǰ�</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:25:04" DateTime="2005-07-07T06:25:04.849Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">name?</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:26:56" DateTime="2005-07-07T06:26:56.447Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">�û���־ Ӧ������ݿ���û���ԭ������һֱ����huihai��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:27:14" DateTime="2005-07-07T06:27:14.901Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��,��һ��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:28:15" DateTime="2005-07-07T06:28:15.904Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">���������� WebSphere ��
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:28:35" DateTime="2005-07-07T06:28:35.139Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">ORACLE_JDBC_DRIVER_PATH</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:35:37" DateTime="2005-07-07T06:35:37.736Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">ok</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:35:40" DateTime="2005-07-07T06:35:40.221Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">/opt/oracle/product/9.2.0/jdbc</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:35:52" DateTime="2005-07-07T06:35:52.128Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:35:55" DateTime="2005-07-07T06:35:55.128Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">�����Ӷ԰�?</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:36:36" DateTime="2005-07-07T06:36:36.520Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">ָ��/opt/oracle/product/9.2.0/jdbc/lib?
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:37:06" DateTime="2005-07-07T06:37:06.803Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">
+                        ORACLE_JDBC_DRIVER_PATH=/opt/oracle/product/9.2.0/jdbc/lib
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:37:12" DateTime="2005-07-07T06:37:12.537Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:37:16" DateTime="2005-07-07T06:37:16.428Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">û�����</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:37:38" DateTime="2005-07-07T06:37:38.804Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">Ȼ����Դ JDBC �ṩ����</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:37:47" DateTime="2005-07-07T06:37:47.055Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">ok</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:38:17" DateTime="2005-07-07T06:38:17.681Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">�½� ѡ��Oracle JDBC Thin Driver</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:39:15" DateTime="2005-07-07T06:39:15.871Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">��·�� ��һ�� ��Ȼ�����Դ</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:40:04" DateTime="2005-07-07T06:40:04.420Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">ֻ��Oracle JDBC Driver ��Oracle JDBC
+                        Driver(XA)
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:40:13" DateTime="2005-07-07T06:40:13.546Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">Oracle JDBC Driver</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:40:25" DateTime="2005-07-07T06:40:25.468Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��Oracle JDBC Driver���԰�</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:40:28" DateTime="2005-07-07T06:40:28.953Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:40:30" DateTime="2005-07-07T06:40:30.953Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">���Ե�</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:41:37" DateTime="2005-07-07T06:41:37.971Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">
+                        ��·��(${ORACLE_JDBC_DRIVER_PATH}/ojdbc14.jar
+                        )���ö���?
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:42:28" DateTime="2005-07-07T06:42:28.942Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">�ҿ�����������classes12.zip
+                        ��
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:42:54" DateTime="2005-07-07T06:42:54.193Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��,����������,next?;)</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:43:10" DateTime="2005-07-07T06:43:10.850Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">�����������Դ</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:43:22" DateTime="2005-07-07T06:43:22.757Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">ok</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:43:27" DateTime="2005-07-07T06:43:27.148Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">�½�</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:43:40" DateTime="2005-07-07T06:43:40.774Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">��� ��JNDI</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:43:41" DateTime="2005-07-07T06:43:41.430Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">ok</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:43:49" DateTime="2005-07-07T06:43:49.227Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">��Ϊbsd</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:44:51" DateTime="2005-07-07T06:44:51.230Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">�����ܹܵ���֤���� ѡ�� J2C ��֤��� �ոմ������Ǹ�</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:45:41" DateTime="2005-07-07T06:45:41.357Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">ӳ�� �� ���ñ��� ѡ�����һ��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:45:54" DateTime="2005-07-07T06:45:54.108Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">����ܹ���֤�����أ�</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:46:16" DateTime="2005-07-07T06:46:16.343Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">Ҳѡ��� �����ܹܵ���֤���� һ��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:46:53" DateTime="2005-07-07T06:46:53.642Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:47:11" DateTime="2005-07-07T06:47:11.392Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">������Ķ�������</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:47:20" DateTime="2005-07-07T06:47:20.127Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��� JNDI �� �����ܹܳ־��ԣ�</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:47:34" DateTime="2005-07-07T06:47:34.081Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">��Ϊbsd</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:47:52" DateTime="2005-07-07T06:47:52.738Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">�����ܹܳ־��� ����ѡ��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:48:13" DateTime="2005-07-07T06:48:13.333Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">ok</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:50:03" DateTime="2005-07-07T06:50:03.322Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">�������� ��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:51:00" DateTime="2005-07-07T06:51:00.528Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">Ȼ�������ԣ�URL:jdbc:oracle:thin:@localhost:1521:bsd
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:51:40" DateTime="2005-07-07T06:51:40.873Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">jdbc: oracle:thin: @localhost:1521:bsd</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:51:57" DateTime="2005-07-07T06:51:57.327Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">�ո�ȥ��Ҫ</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:52:21" DateTime="2005-07-07T06:52:21.047Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">ok</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:52:26" DateTime="2005-07-07T06:52:26.078Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">oralce��websphere��ͬһ̨�����ϵİ�</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:52:48" DateTime="2005-07-07T06:52:48.423Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">right</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:54:00" DateTime="2005-07-07T06:54:00.880Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">���ˣ����õĳ���������ұ������Ǹ�</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:54:01" DateTime="2005-07-07T06:54:01.926Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">ok</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:54:10" DateTime="2005-07-07T06:54:10.255Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:54:46" DateTime="2005-07-07T06:54:46.741Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">next</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:54:56" DateTime="2005-07-07T06:54:56.804Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">�Ǹ�����Ҫ��������ܷ���ȥ�ģ�����ֻ�Ǹ�ѹ���û</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="14:55:04" DateTime="2005-07-07T06:55:04.773Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">��װ�µ�Ӧ�ó���</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:03:58" DateTime="2005-07-07T07:03:58.484Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">Ŷ</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:04:19" DateTime="2005-07-07T07:04:19.157Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">�Ҳ�����һ�����Դ�����?</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:04:28" DateTime="2005-07-07T07:04:28.001Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">���Խڵ� localhost �ķ����� server1
+                        �ϵ����Դ bsd ʧ�ܣ����������쳣��java.lang.Exception: java.sql.SQLException: Io �쳣: Connection
+                        refused(DESCRIPTION=(TMP=)(VSNNUM=153093120)(ERR=12505)(ERROR_STACK=(ERROR=(CODE=12505)(EMFI=4))))��
+                        �鿴 JVM ��־��ȡ��һ����ϸ��Ϣ�� null
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:05:01" DateTime="2005-07-07T07:05:01.550Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:06:33" DateTime="2005-07-07T07:06:33.366Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">��ʦ�����ݿ��Ǵ������ĸ��û��µģ�</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:07:04" DateTime="2005-07-07T07:07:04.805Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">huihai/12345</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:09:25" DateTime="2005-07-07T07:09:25.780Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">JDBC �ṩ���� &gt; ��·�� ��ʲô��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:09:48" DateTime="2005-07-07T07:09:48.969Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">${ORACLE_JDBC_DRIVER_PATH}/ojdbc14.jar
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:11:07" DateTime="2005-07-07T07:11:07.785Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">
+                        ��Ϊ��${ORACLE_JDBC_DRIVER_PATH}/classes12.jar��
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:11:33" DateTime="2005-07-07T07:11:33.645Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">�ٲ��Կ�����</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:11:53" DateTime="2005-07-07T07:11:53.537Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">���ǲ���</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:12:03" DateTime="2005-07-07T07:12:03.584Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">������Ϣ��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:12:30" DateTime="2005-07-07T07:12:30.476Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">���Խڵ� localhost �ķ����� server1
+                        �ϵ����Դ bsd ʧ�ܣ����������쳣��java.lang.Exception: java.sql.SQLException: Io �쳣: Connection
+                        refused(DESCRIPTION=(TMP=)(VSNNUM=153093120)(ERR=12505)(ERROR_STACK=(ERROR=(CODE=12505)(EMFI=4))))��
+                        �鿴 JVM ��־��ȡ��һ����ϸ��Ϣ�� null
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:18:44" DateTime="2005-07-07T07:18:44.618Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">oracle ��ݿ�������ʲô��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:19:15" DateTime="2005-07-07T07:19:15.510Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">jdbc: oracle:thin: @localhost:1521�� ��ݿ�����</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:23:27" DateTime="2005-07-07T07:23:27.615Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">Ŷ���������������</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:25:46" DateTime="2005-07-07T07:25:46.934Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">ok</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:26:10" DateTime="2005-07-07T07:26:10.685Z" SessionID="1">
+                <From>
+                        <User FriendlyName="���"/>
+                </From>
+                <To>
+                        <User FriendlyName="��滪"/>
+                </To>
+                <Text Style="font-family:����; color:#808000; ">���Գɹ��ˣ��ǰɣ�</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:26:22" DateTime="2005-07-07T07:26:22.482Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:39:59" DateTime="2005-07-07T07:39:59.612Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">С�£����</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:41:02" DateTime="2005-07-07T07:41:02.772Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">С�£���δ�����ұ򣬷�����һ��bsd.ear.rar
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:44:39" DateTime="2005-07-07T07:44:39.219Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">EAR �ļ��������𻵵ĺͣ�������ġ�
+                        AppDeploymentException: [] com.ibm.etools.archive.exception.NoModuleFileException: ���ھ��� uri
+                        bsd.war ��ģ��Ԫ�أ��ļ�������
+                </Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:45:03" DateTime="2005-07-07T07:45:03.220Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">����rar����һ���׼zip��ʽ��bsd.ear</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:45:20" DateTime="2005-07-07T07:45:20.861Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">�����ϴ���</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:49:42" DateTime="2005-07-07T07:49:42.967Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:49:53" DateTime="2005-07-07T07:49:53.748Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">С�£���δ��</Text>
+        </Message>
+        <Message Date="2005-7-7" Time="15:50:06" DateTime="2005-07-07T07:50:06.343Z" SessionID="1">
+                <From>
+                        <User FriendlyName="��滪"/>
+                </From>
+                <To>
+                        <User FriendlyName="���"/>
+                </To>
+                <Text Style="font-family:����; font-weight:bold; color:#008000; ">С�£���ΰ�װӦ�ó���</Text>
+        </Message>
+</Log>

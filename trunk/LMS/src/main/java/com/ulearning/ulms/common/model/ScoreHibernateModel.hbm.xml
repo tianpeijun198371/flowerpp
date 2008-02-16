@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.common.model.ScoreHibernateModel"
+                table="TM_SCORE_TAB"
+                >
+                <id
+                        name="scoreid"
+                        type="int"
+                        column="SCOREID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">scoreID</param>
+                        </generator>
+                </id>
+                <property
+                        name="userid"
+                        type="int"
+                        column="USERID"
+                        length="22"
+                        />
+                <property
+                        name="relationid"
+                        type="int"
+                        column="relationid"
+                        length="22"
+                        />
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        not-null="true"
+                        length="1"
+                        />
+                <property
+                        name="score"
+                        type="java.lang.String"
+                        column="SCORE"
+                        length="30"
+                        />
+                <property
+                        name="scoretype"
+                        type="int"
+                        column="SCORETYPE"
+                        length="22"
+                        />
+                <property
+                        name="credit"
+                        type="float"
+                        column="CREDIT"
+                        length="6"
+                        />
+                <property
+                        name="createdate"
+                        type="java.util.Date"
+                        />
+                <property
+                        name="modifydate"
+                        type="java.util.Date"
+                        />
+                <property
+                        name="examtype"
+                        type="int"
+                        column="EXAMTYPE"
+                        length="22"
+                        />
+                <property
+                        name="ispass"
+                        type="java.lang.String"
+                        column="ISPASS"
+                        length="1"
+                        />
+        </class>
+</hibernate-mapping>

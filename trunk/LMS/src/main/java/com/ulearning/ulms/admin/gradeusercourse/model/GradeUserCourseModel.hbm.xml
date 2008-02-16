@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.admin.gradeusercourse.model.GradeUserCourseModel"
+                table="T_GRADEUSERCOURSE_TAB"
+                >
+
+                <id
+                        name="gradeUCID"
+                        column="GRADEUCID"
+                        type="java.lang.Integer"
+                        length="22"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">GradeUCID</param>
+                        </generator>
+                </id>
+
+
+                <property
+                        name="gradetID"
+                        column="GRADETID"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+
+                <property
+                        name="gradecID"
+                        column="GRADECID"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+
+                <property
+                        name="gradeuserID"
+                        column="GRADEUSERID"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+
+                <property
+                        name="coursegrade"
+                        column="COURSEGRADE"
+                        type="java.lang.Float"
+                        length="22"
+                        />
+
+        </class>
+
+
+</hibernate-mapping>

@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.delete.model.DeleteModel"
+                table="T_DELETE_TAB"
+                >
+
+                <id
+                        name="deleteID"
+                        column="DELETEID"
+                        type="java.lang.Integer"
+                        length="22"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">DeleteID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="relationID"
+                        column="RELATIONID"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+                <property
+                        name="relationType"
+                        column="RELATIONTYPE"
+                        type="java.lang.String"
+                        length="1"
+                        />
+                <property
+                        name="state"
+                        column="STATE"
+                        type="java.lang.String"
+                        length="1"
+                        />
+                <property
+                        name="objectType"
+                        column="OBJECTTYPE"
+                        type="java.lang.String"
+                        length="1"
+                        />
+                <property
+                        name="saveTimeNum"
+                        column="SAVETIMENUM"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+                <property
+                        name="timeType"
+                        column="TIMETYPE"
+                        type="java.lang.String"
+                        length="1"
+                        />
+                <property
+                        name="saveRows"
+                        column="SAVEROWS"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+                <property
+                        name="userID"
+                        column="USERID"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+                <property
+                        name="updateDate"
+                        column="UPDATEDATE"
+                        type="java.util.Date"
+                        length="7"
+                        />
+                <property
+                        name="tmp"
+                        column="tmp"
+                        type="java.lang.String"
+                        length="1"
+                        />
+
+                <!-- Associations -->
+                <!-- derived association(s) for compound key -->
+                <!-- end of derived association(s) -->
+
+
+        </class>
+</hibernate-mapping>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the MIDdlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/mIDdlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.evaluate.model.ERecordRankModel"
+                table="E_ERecordRank_Tab">
+
+                <id
+                        name="rankID"
+                        type="int"
+                        column="RANKID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">rankID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="name"
+                        type="java.lang.String"
+                        column="NAME"
+                        not-null="true"
+                        length="100"
+                        />
+
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        not-null="true"
+                        length="500"
+                        />
+
+                <!-- Associations -->
+        </class>
+</hibernate-mapping>

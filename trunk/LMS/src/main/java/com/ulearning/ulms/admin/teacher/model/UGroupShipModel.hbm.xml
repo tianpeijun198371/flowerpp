@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.admin.teacher.model.GroupShip"
+                table="U_GROUP_SHIP"
+                >
+
+                <id
+                        name="g_Ship_ID"
+                        column="G_SHIP_ID"
+                        type="java.lang.Integer"
+                        length="22"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">G_Ship_ID</param>
+                        </generator>
+                </id>
+
+
+                <property
+                        name="userID"
+                        column="USERID"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+
+                <property
+                        name="groupName"
+                        column="GROUP_NAME"
+                        type="java.lang.String"
+                        length="100"
+                        />
+
+                <property
+                        name="perdUrl"
+                        column="PERD_URL"
+                        type="java.lang.String"
+                        length="100"
+                        />
+
+                <property
+                        name="remark"
+                        column="REMARK"
+                        type="java.lang.String"
+                        length="255"
+                        />
+
+        </class>
+
+
+</hibernate-mapping>

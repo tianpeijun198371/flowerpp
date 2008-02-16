@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.backup.model.BackupModel"
+                table="T_BACKUP_TAB"
+                >
+
+                <id
+                        name="backupID"
+                        column="BACKUPID"
+                        type="java.lang.Integer"
+                        length="22"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">BackupID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="dbName"
+                        column="DBNAME"
+                        type="java.lang.String"
+                        length="50"
+                        />
+                <property
+                        name="dbType"
+                        column="DBTYPE"
+                        type="java.lang.String"
+                        length="1"
+                        />
+                <property
+                        name="username"
+                        column="USERNAME"
+                        type="java.lang.String"
+                        length="50"
+                        />
+                <property
+                        name="password"
+                        column="PASSWORD"
+                        type="java.lang.String"
+                        length="50"
+                        />
+                <property
+                        name="filePath"
+                        column="FILEPATH"
+                        type="java.lang.String"
+                        length="200"
+                        />
+                <property
+                        name="operateType"
+                        column="OPERATETYPE"
+                        type="java.lang.String"
+                        length="1"
+                        />
+                <property
+                        name="userID"
+                        column="USERID"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+                <property
+                        name="createDate"
+                        column="CREATEDATE"
+                        type="java.sql.Date"
+                        length="7"
+                        />
+
+
+                <!-- Associations -->
+                <!-- derived association(s) for compound key -->
+                <!-- end of derived association(s) -->
+
+
+        </class>
+</hibernate-mapping>

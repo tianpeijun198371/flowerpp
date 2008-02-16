@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.video.model.VideoModel"
+                table="T_vclass_TAB"
+                >
+
+                <id
+                        name="vclassid"
+                        type="int"
+                        column="vclassID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">vclassID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="name"
+                        type="java.lang.String"
+                        column="NAME"
+                        length="100"
+                        >
+
+                </property>
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="1"
+                        >
+
+                </property>
+                <property
+                        name="relationidstr"
+                        type="java.lang.String"
+                        column="RELATIONIDSTR"
+                        length="1000"
+                        >
+
+                </property>
+                <property
+                        name="begindate"
+                        type="java.util.Date"
+                        column="BEGINDATE"
+                        length="7"
+                        >
+
+                </property>
+
+                <property
+                        name="enddate"
+                        type="java.util.Date"
+                        column="ENDDATE"
+                        length="7"
+                        >
+                </property>
+
+                <property
+                        name="remark0"
+                        type="java.lang.String"
+                        column="REMARK0"
+                        length="100"
+                        >
+                </property>
+
+                <property
+                        name="remark1"
+                        type="java.lang.String"
+                        column="REMARK1"
+                        length="100"
+                        >
+                </property>
+
+                <property
+                        name="remark2"
+                        type="java.lang.String"
+                        column="REMARK2"
+                        length="100"
+                        >
+                </property>
+
+                <property
+                        name="remark3"
+                        type="java.lang.String"
+                        column="REMARK3"
+                        length="100"
+                        >
+                </property>
+        </class>
+</hibernate-mapping>

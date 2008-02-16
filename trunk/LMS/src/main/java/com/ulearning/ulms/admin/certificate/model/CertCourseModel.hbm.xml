@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.admin.certificate.model.CertCourseModel"
+                table="CER_COURSE_TAB"
+                >
+
+                <composite-id name="comp_id" class="com.ulearning.ulms.admin.certificate.model.CertCoursePK">
+                        <key-property
+                                name="certificateID"
+                                column="CERTIFICATEID"
+                                type="int"
+                                length="22"
+                                />
+                        <key-property
+                                name="courseID"
+                                column="COURSEID"
+                                type="int"
+                                length="22"
+                                />
+                        <key-property
+                                name="type"
+                                column="TYPE"
+                                type="int"
+                                length="1"
+                                />
+                </composite-id>
+
+                <property
+                        name="credit"
+                        type="double"
+                        column="CREDIT"
+                        length="6"
+                        />
+                <property
+                        name="courseType"
+                        type="int"
+                        column="COURSETYPE"
+                        length="1"
+                        />
+                <property
+                        name="sequence"
+                        type="int"
+                        column="SEQUENCE"
+                        length="22"
+                        />
+                <property
+                        name="available"
+                        type="java.lang.String"
+                        column="AVAILABLE"
+                        length="1"
+                        />
+                <property
+                        name="period"
+                        type="double"
+                        column="PERIOD"
+                        length="22"
+                        />
+
+                <!-- Associations -->
+                <!-- derived association(s) for compound key -->
+                <!-- end of derived association(s) -->
+
+
+        </class>
+</hibernate-mapping>

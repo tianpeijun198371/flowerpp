@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the MIDdlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/mIDdlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.evaluate.model.EAccessModel"
+                table="E_Access_Tab">
+
+                <id
+                        name="accessID"
+                        type="int"
+                        column="ACCESSID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">accessID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="accessType"
+                        type="java.lang.String"
+                        column="ACCESSTYPE"
+                        not-null="true"
+                        length="150"
+                        />
+
+                <property
+                        name="accessDescription"
+                        type="int"
+                        column="ACCESSDESCRIPTION"
+                        not-null="true"
+                        length="50"
+                        />
+
+                <property
+                        name="userID"
+                        type="int"
+                        column="USERID"
+                        not-null="true"
+                        length="10"
+                        />
+
+                <property
+                        name="moduleID"
+                        type="int"
+                        column="MODULEID"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="1"
+                        />
+
+                <property
+                        name="parentID"
+                        type="int"
+                        column="PARENTID"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <property
+                        name="IP"
+                        type="java.lang.String"
+                        column="IP"
+                        length="15"
+                        />
+
+                <property
+                        name="accessDate"
+                        type="java.util.Date"
+                        column="ACCESSDATE"
+                        not-null="true"
+                        length="7"
+                        />
+
+                <property
+                        name="remark1"
+                        type="java.lang.String"
+                        column="REMARK1"
+                        length="150"
+                        />
+
+                <property
+                        name="remark2"
+                        type="java.lang.String"
+                        column="REMARK2"
+                        length="150"
+                        />
+
+                <property
+                        name="remark3"
+                        type="java.lang.String"
+                        column="REMARK3"
+                        length="150"
+                        />
+
+                <!-- Associations -->
+        </class>
+</hibernate-mapping>

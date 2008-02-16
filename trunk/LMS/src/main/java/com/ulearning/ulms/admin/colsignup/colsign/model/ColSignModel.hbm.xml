@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.admin.colsignup.colsign.model.ColSignModel"
+                table="C_COLSIGN_TAB"
+                >
+
+                <id
+                        name="colSignID"
+                        type="int"
+                        column="COLSIGNID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">ColSignID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="name"
+                        type="java.lang.String"
+                        column="NAME"
+                        not-null="true"
+                        length="200"
+                        />
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="500"
+                        />
+                <property
+                        name="createTime"
+                        type="java.util.Date"
+                        column="CREATETIME"
+                        length="7"
+                        />
+                <property
+                        name="creator"
+                        type="int"
+                        column="CREATOR"
+                        length="22"
+                        />
+                <property
+                        name="isSubmit"
+                        type="java.lang.String"
+                        column="ISSUBMIT"
+                        length="1"
+                        />
+                <property
+                        name="approved"
+                        type="java.lang.String"
+                        column="APPROVED"
+                        length="1"
+                        />
+                <property
+                        name="desc1"
+                        type="java.lang.String"
+                        column="DESC1"
+                        length="20"
+                        />
+
+                <property
+                        name="orgID"
+                        type="int"
+                        column="ORGID"
+                        length="22"
+                        />
+
+                <!-- Associations -->
+
+        </class>
+</hibernate-mapping>

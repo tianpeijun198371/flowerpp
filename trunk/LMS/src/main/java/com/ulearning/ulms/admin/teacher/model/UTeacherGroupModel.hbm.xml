@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.admin.teacher.model.TeacherGroup"
+                table="U_TEACHER_GROUP"
+                >
+
+                <id
+                        name="uteachgroupID"
+                        column="U_TEACHGROUP_ID"
+                        type="java.lang.Integer"
+                        length="22"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">U_Teachgroup_ID</param>
+                        </generator>
+                </id>
+
+
+                <property
+                        name="userID"
+                        column="USERID"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+
+                <property
+                        name="g_Ship_ID"
+                        column="G_SHIP_ID"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+
+                <property
+                        name="remark"
+                        column="REMARK"
+                        type="java.lang.String"
+                        length="255"
+                        />
+
+        </class>
+
+
+</hibernate-mapping>

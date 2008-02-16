@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.discussion.model.ForumModel"
+                table="C_FORUM_TAB"
+                >
+
+                <id name="forumid" type="int" column="FORUMID">
+                        <generator class="sequence">
+                                <param name="sequence">
+                                        FORUMID
+                                </param>
+                        </generator>
+                </id>
+
+                <property
+                        name="courseid"
+                        type="int"
+                        column="COURSEID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="orderindex"
+                        type="int"
+                        column="ORDERINDEX"
+                        length="22"
+                        />
+                <property
+                        name="title"
+                        type="java.lang.String"
+                        column="TITLE"
+                        not-null="true"
+                        length="200"
+                        />
+                <property
+                        name="isallowann"
+                        type="java.lang.String"
+                        column="ISALLOWANN"
+                        length="1"
+                        />
+                <property
+                        name="isupdateaft"
+                        type="java.lang.String"
+                        column="ISUPDATEAFT"
+                        length="1"
+                        />
+                <property
+                        name="isdeleteaft"
+                        type="java.lang.String"
+                        column="ISDELETEAFT"
+                        length="1"
+                        />
+                <property
+                        name="isaccessory"
+                        type="java.lang.String"
+                        column="ISACCESSORY"
+                        length="1"
+                        />
+                <property
+                        name="isnewitem"
+                        type="java.lang.String"
+                        column="ISNEWITEM"
+                        length="1"
+                        />
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="200"
+                        />
+        </class>
+</hibernate-mapping>

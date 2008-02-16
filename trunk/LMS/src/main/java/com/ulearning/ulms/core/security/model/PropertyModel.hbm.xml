@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.core.security.model.PropertyModel"
+                table="SEC_PROPERTY_TAB"
+                >
+
+                <composite-id name="comp_id" class="com.ulearning.ulms.core.security.model.PropertyModelPK">
+                        <key-property
+                                name="moduleid"
+                                column="MODULEID"
+                                type="int"
+                                length="22"
+                                />
+                        <key-property
+                                name="proid"
+                                column="PROID"
+                                type="int"
+                                length="22"
+                                />
+                </composite-id>
+
+                <property
+                        name="isavailable"
+                        type="int"
+                        column="ISAVAILABLE"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="name"
+                        type="java.lang.String"
+                        column="NAME"
+                        length="50"
+                        />
+                <property
+                        name="prono"
+                        type="java.lang.String"
+                        column="PRONO"
+                        length="50"
+                        />
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="500"
+                        />
+
+                <!-- Associations -->
+                <!-- derived association(s) for compound key -->
+                <!-- bi-directional many-to-one association to SecModuleTab -->
+                <many-to-one
+                        name="secModuleTab"
+                        class="ulms.hibernate.SecModuleTab"
+                        update="false"
+                        insert="false"
+                        >
+                        <column name="MODULEID"/>
+                </many-to-one>
+
+                <!-- end of derived association(s) -->
+
+
+        </class>
+</hibernate-mapping>

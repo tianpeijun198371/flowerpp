@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.report.custom.tasktime.model.TaskTimeModel"
+                table="R_TASKTIME_TAB"
+                >
+
+                <id
+                        name="taskTimeID"
+                        type="java.lang.Integer"
+                        column="TASKTIMEID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">TaskTimeID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="TaskID"
+                        type="int"
+                        column="TASKID"
+                        />
+
+                <property
+                        name="taskTime"
+                        type="java.sql.Date"
+                        column="TASKTIME"
+                        />
+
+                <property
+                        name="notExecuteCondition"
+                        type="java.lang.String"
+                        column="NOTEXECUTECONDITION"
+                        length="100"
+                        />
+
+                <!-- Associations -->
+
+                <!-- bi-directional many-to-one association to RtaskTab -->
+                <!--
+      <many-to-one
+          name="rtaskTab"
+          class="ulms.hibernate.RtaskTab"
+          not-null="true"
+      >
+          <column name="TASKID" />
+      </many-to-one>
+          -->
+        </class>
+</hibernate-mapping>

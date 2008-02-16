@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.admin.certificate.model.CertPlanModel" table="F_CERTPLAN_TAB">
+                <id column="CPACOTID"
+                    name="cpacotid"
+                    type="int">
+
+                        <generator class="sequence">
+                                <param name="sequence">cpacotid</param>
+                        </generator>
+
+
+                </id>
+                <property column="CPCERTNAME" length="50" name="cpcertname" not-null="true" type="java.lang.String"/>
+                <property column="CPUSERNUMBER" length="10" name="cpusernumber" type="int"/>
+                <property column="CPCHARGE" length="6" name="cpcharge" type="java.lang.Double"/>
+                <property column="CPCOMEDATE" length="26" name="cpcomedate" type="java.util.Date"/>
+                <property column="CPGODATE" length="26" name="cpgodate" type="java.util.Date"/>
+                <property column="CPTRAINPLACE" length="50" name="cptrainplace" type="java.lang.String"/>
+                <property column="CPRESTPLACE" length="50" name="cprestplace" type="java.lang.String"/>
+                <property column="CPRESTCHARGE" length="6" name="cprestcharge" type="java.lang.Double"/>
+                <property column="CPFOODPLACE" length="50" name="cpfoodplace" type="java.lang.String"/>
+                <property column="CPFOODCHARGE" length="6" name="cpfoodcharge" type="java.lang.Double"/>
+                <property column="CPTEACHER" length="50" name="cpteacher" type="java.lang.String"/>
+                <property column="CPREMARK" length="50" name="cpremark" type="java.lang.String"/>
+                <property column="CPREMARK1" length="50" name="cpremark1" type="java.lang.String"/>
+                <property column="CPREMARK2" length="50" name="cpremark2" type="java.lang.String"/>
+        </class>
+</hibernate-mapping>

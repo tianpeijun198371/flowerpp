@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the MIDdlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/mIDdlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.evaluate.model.FeedBackOptionModel"
+                table="E_FeedbackOption_Tab">
+                <id
+                        name="feedbackOptionID"
+                        type="int"
+                        column="FEEDBACKOPTIONID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">feedbackOptionID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="relationID"
+                        type="int"
+                        column="RELATIONID"
+                        not-null="true"
+                        />
+
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="1"
+                        />
+
+                <property
+                        name="status"
+                        type="java.lang.String"
+                        column="STATUS"
+                        length="1"
+                        />
+
+                <property
+                        name="isViewResult"
+                        type="java.lang.String"
+                        column="ISVIEWRESULT"
+                        length="1"
+                        />
+
+                <property
+                        name="isAnonymous"
+                        type="java.lang.String"
+                        column="ISANONYMOUS"
+                        length="1"
+                        />
+
+                <property
+                        name="effectiveDate"
+                        type="java.util.Date"
+                        column="EFFECTIVEDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="expiredDate"
+                        type="java.util.Date"
+                        column="EXPIREDDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="updateDate"
+                        type="java.util.Date"
+                        column="UPDATEDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="createDate"
+                        type="java.util.Date"
+                        column="CREATEDATE"
+                        not-null="true"
+                        length="7"
+                        />
+
+                <property
+                        name="remark"
+                        type="java.lang.String"
+                        column="REMARK"
+                        length="50"
+                        />
+
+                <property
+                        name="remark1"
+                        type="java.lang.String"
+                        column="REMARK1"
+                        length="50"
+                        />
+
+                <property
+                        name="remark2"
+                        type="java.lang.String"
+                        column="REMARK2"
+                        length="50"
+                        />
+
+                <property
+                        name="remark3"
+                        type="java.lang.String"
+                        column="REMARK3"
+                        length="50"
+                        />
+
+                <property
+                        name="remark4"
+                        type="java.lang.String"
+                        column="REMARK4"
+                        length="50"
+                        />
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

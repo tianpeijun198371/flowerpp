@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.lmslog.model.LmslogModel"
+                table="T_LMSLOG_TAB"
+                >
+
+                <id
+                        name="logid"
+                        type="int"
+                        column="LOGID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">LogID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="logtypeid"
+                        type="int"
+                        column="LOGTYPEID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="userid"
+                        type="int"
+                        column="USERID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="orgid"
+                        type="int"
+                        column="ORGID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="userip"
+                        type="java.lang.String"
+                        column="USERIP"
+                        length="30"
+                        />
+                <property
+                        name="operationtypeid"
+                        type="int"
+                        column="OPERATIONTYPEID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="operationtable"
+                        type="java.lang.String"
+                        column="OPERATIONTABLE"
+                        length="30"
+                        />
+                <property
+                        name="operationtime"
+                        type="java.util.Date"
+                        column="OPERATIONTIME"
+                        length="7"
+                        />
+                <property
+                        name="operationobjectid"
+                        type="int"
+                        column="OPERATIONOBJECTID"
+                        length="22"
+                        />
+
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="300"
+                        />
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

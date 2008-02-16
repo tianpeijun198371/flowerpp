@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.course.model.Catalog"
+                table="C_CATALOG_TAB"
+                >
+
+                <id
+                        name="catalogID"
+                        type="int"
+                        column="CATALOGID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">CatalogID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="name"
+                        type="java.lang.String"
+                        column="NAME"
+                        not-null="true"
+                        length="30"
+                        />
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        not-null="true"
+                        length="1"
+                        />
+                <property
+                        name="parentID"
+                        type="int"
+                        column="PARENTID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="orgID"
+                        type="int"
+                        column="ORGID"
+                        length="22"
+                        />
+                <property
+                        name="aspID"
+                        type="int"
+                        column="ASPID"
+                        length="22"
+                        />
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="200"
+                        />
+                <property
+                        name="establishTime"
+                        type="java.sql.Date"
+                        column="ESTABLISHTIME"
+                        length="7"
+                        />
+                 <property
+                        name="defaultCourseIcon"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="icon"
+                        type="java.lang.String"
+                        />
+                <!-- Associations -->
+
+        </class>
+</hibernate-mapping>

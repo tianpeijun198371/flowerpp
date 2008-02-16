@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.familyeducation.model.FamilyEducationTeacherProfileModel"
+                table="LMS_FETeacherProfile_TAB"
+                >
+                <id name="teacherID" type="int">
+                        <generator class="assigned"/>
+                </id>
+                <property name="aspID" type="int"/>
+                <property name="teacherName" type="java.lang.String"/>
+                <property name="teacherCode" type="java.lang.String"/>
+                <property name="province" type="java.lang.String"/>
+                <property name="area" type="java.lang.String"/>
+                <property name="district" type="java.lang.String"/>
+                <property name="availableTeachSubject" type="java.lang.String"/>
+                <property name="bodyIdentity" type="int"/>
+                <property name="gender" type="int"/>
+                <property name="otherSubjects" type="java.lang.String"/>
+                <property name="certification" type="java.lang.String"/>
+                <property name="keyword" type="java.lang.String"/>
+                <property name="description" type="java.lang.String"/>
+                <property name="availableTeachArea" type="java.lang.String"/>
+                <property name="availableTeachAreaDetail" type="java.lang.String"/>
+                <property name="resume" type="java.lang.String"/>
+                <property name="tutorMode" type="int"/>
+                <property name="remunerationRequired" type="java.lang.String"/>
+                <property name="source" type="int"/>
+                <property name="status" type="int"/>
+                <property name="isRecommend" type="int"/>
+                <property name="isInTop" type="int"/>
+                <property name="rank" type="int"/>
+                <property name="createDate" type="java.util.Date"/>
+                <property name="lastUpdateDate" type="java.util.Date"/>
+        </class>
+</hibernate-mapping>

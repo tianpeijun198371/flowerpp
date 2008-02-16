@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.finance.model.ForganAccountDetailModel"
+                table="F_OrganAccountDetail_TAB"
+                >
+
+                <id
+                        name="oadetailId"
+                        type="int"
+                        column="oaDetailID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">oadetailId</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="orgId"
+                        type="int"
+                        column="OrgID"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="oadetailOrganName"
+                        type="java.lang.String"
+                        column="oaDetailOrganName"
+                        length="50"
+                        />
+                <property
+                        name="oadetailInOutType"
+                        type="int"
+                        column="oaDetailInOutType"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="oadetailTypeId"
+                        type="int"
+                        column="oaDetailTypeID"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="oadetailAmount"
+                        type="double"
+                        column="oaDetailAmount"
+                        length="8"
+                        />
+                <property
+                        name="oadetailDate"
+                        type="java.util.Date"
+                        column="oaDetailDate"
+                        length="23"
+                        />
+                <property
+                        name="oadetailOperatorId"
+                        type="int"
+                        column="oaDetailOperatorID"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="oadetailOperatorName"
+                        type="java.lang.String"
+                        column="oaDetailOperatorName"
+                        length="50"
+                        />
+                <property
+                        name="oadetailEntityValue"
+                        type="int"
+                        column="oaDetailEntityValue"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="oadetailRemitType"
+                        type="int"
+                        column="oaDetailRemitType"
+                        length="10"
+                        />
+                <property
+                        name="oadetailInvoice"
+                        type="int"
+                        column="oaDetailInvoice"
+                        length="10"
+                        />
+                <property
+                        name="oadetailAudit"
+                        type="int"
+                        column="oaDetailAudit"
+                        length="10"
+                        />
+                <property
+                        name="oadetailMemo"
+                        type="java.lang.String"
+                        column="oaDetailMemo"
+                        length="200"
+                        />
+                <property
+                        name="oadetailRemark1"
+                        type="java.lang.String"
+                        column="oaDetailRemark1"
+                        length="150"
+                        />
+                <property
+                        name="oadetailRemark2"
+                        type="java.lang.String"
+                        column="oaDetailRemark2"
+                        length="150"
+                        />
+                <property
+                        name="aspId"
+                        type="int"
+                        column="AspID"
+                        length="10"
+                        />
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

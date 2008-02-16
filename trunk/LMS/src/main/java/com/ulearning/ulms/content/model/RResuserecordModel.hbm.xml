@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.content.model.RResuserecordModel"
+               table="R_RESUSERECORD_TAB">
+
+                <id
+                        column="RESUSEID"
+                        name="resuseid"
+                        type="int"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">resuseid</param>
+
+                        </generator>
+
+                </id>
+
+                <property column="RESID" length="10" name="resid" type="int"/>
+                <property column="RESNAME" length="100" name="resname" type="java.lang.String"/>
+                <property column="ASPID" length="10" name="aspid" type="int"/>
+                <property column="ORGID" length="10" name="orgid" type="int"/>
+                <property column="ASPNAME" length="100" name="aspname" type="java.lang.String"/>
+                <property column="ORGNAME" length="100" name="orgname" type="java.lang.String"/>
+                <property column="USERID" length="10" name="userid" type="int"/>
+                <property column="USERNAME" length="50" name="username" type="java.lang.String"/>
+                <property column="USERBEGINDATE" length="26" name="userbegindate" type="java.util.Date"/>
+                <property column="USERENDDATE" length="26" name="userenddate" type="java.util.Date"/>
+                <property column="RESPURPOST" length="200" name="respurpost" type="java.lang.String"/>
+                <property column="USERDEL" length="10" name="userdel" type="int"/>
+                <property column="AUDITTAG" length="10" name="audittag" type="int"/>
+                <property column="AUDITUSERID" length="10" name="audituserid" type="int"/>
+                <property column="AUDITUSERNAME" length="50" name="auditusername" type="java.lang.String"/>
+                <property column="URESREMARK1" length="50" name="uresremark1" type="java.lang.String"/>
+                <property column="URESREMARK2" length="50" name="uresremark2" type="java.lang.String"/>
+        </class>
+</hibernate-mapping>

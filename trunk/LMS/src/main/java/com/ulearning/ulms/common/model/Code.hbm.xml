@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.common.model.Code"
+                table="S_CODE_TAB"
+                >
+
+                <id
+                        name="codeid"
+                        type="int"
+                        column="CODEID"
+                        >
+                        <generator class="assigned"/>
+                </id>
+
+                <id
+                        name="codeid"
+                        type="int"
+                        column="CODEID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">
+                                        codeID
+                                </param>
+                        </generator>
+                </id>
+
+                <property
+                        name="relationid"
+                        type="int"
+                        column="RELATIONID"
+                        length="22"
+                        />
+                <property
+                        name="type"
+                        type="int"
+                        column="TYPE"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="title"
+                        type="java.lang.String"
+                        column="TITLE"
+                        not-null="true"
+                        length="200"
+                        />
+                <property
+                        name="comments"
+                        type="java.lang.String"
+                        column="COMMENTS"
+                        length="200"
+                        />
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="200"
+                        />
+
+                <!-- Associations -->
+
+                <!-- bi-directional one-to-many association to ScodeitemTab -->
+                <set
+                        name="scodeitemTabs"
+                        lazy="true"
+                        inverse="true"
+                        cascade="none"
+                        >
+                        <key>
+                                <column name="CODEID"/>
+                        </key>
+                        <one-to-many
+                                class="ulms-sql.hibernate.ScodeitemTab"
+                                />
+                </set>
+
+        </class>
+</hibernate-mapping>

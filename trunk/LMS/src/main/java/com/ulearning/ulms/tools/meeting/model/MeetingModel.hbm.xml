@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.tools.meeting.model.MeetingModel"
+                table="LMS_Meeting_TAB"
+                >
+                <id name="id" type="int">
+                        <generator class="sequence">
+                                <param name="sequence">LMS_MEETING_SEQ</param>
+                        </generator>
+                </id>
+                <property name="relationID" type="int"/>
+                <property name="type" type="java.lang.String"/>
+                <property name="meetingType" type="java.lang.String"/>
+                <property name="meetingID" type="int"/>
+                <property name="name" type="java.lang.String"/>
+                <property name="reference" type="java.lang.String"/>
+                <property name="summary" type="java.lang.String"/>
+                <property name="cameras" type="int"/>
+                <property name="capacity" type="int"/>
+                <property name="compereCode" type="java.lang.String"/>
+                <property name="createrId" type="int"/>
+                <property name="enabledREC" type="java.lang.String"/>
+                <property name="startTime" type="java.util.Date"/>
+                <property name="endTime" type="java.util.Date"/>
+                <property name="fixed" type="java.lang.String"/>
+                <property name="lectureSize" type="int"/>
+                <property name="lectureURL" type="java.lang.String"/>
+                <property name="recordURL" type="java.lang.String"/>
+                <property name="secrecy" type="java.lang.String"/>
+                <property name="primaryServer" type="int"/>
+                <property name="services" type="java.lang.String"/>
+                <property name="specify" type="java.lang.String"/>
+                <property name="specifyCode" type="java.lang.String"/>
+                <property name="auditStatus" type="int"/>
+                <property name="status" type="int"/>
+                <property name="aspID" type="int"/>
+                <property name="createDate" type="java.util.Date"/>
+                <property name="lastUpdateDate" type="java.util.Date"/>
+        </class>
+</hibernate-mapping>

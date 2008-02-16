@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.admin.cerdangan.model.CerDanganModel"
+                table="CER_DANGAN_TAB"
+                >
+
+                <id
+                        name="danganID"
+                        column="DANGANID"
+                        type="int"
+                        length="4"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">danganID</param>
+                        </generator>
+                </id>
+
+
+                <property
+                        name="adminID"
+                        column="ADMINID"
+                        type="int"
+                        not-null="true"
+                        length="4"
+                        />
+
+                <property
+                        name="certName"
+                        column="CERTNAME"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="dateTime"
+                        column="DATETIME"
+                        type="java.util.Date"
+                        length="10"
+                        />
+
+                <property
+                        name="page"
+                        column="PAGE"
+                        type="int"
+                        length="4"
+                        />
+
+                <property
+                        name="remark0"
+                        column="REMARK0"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="remark1"
+                        column="REMARK1"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="remark2"
+                        column="REMARK2"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="remark3"
+                        column="REMARK3"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="remark4"
+                        column="REMARK4"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+        </class>
+
+
+</hibernate-mapping>

@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.GCertificate.model.GCertificateModel"
+                table="G_CERTIFICATE_TAB"
+                >
+
+                <id
+                        name="gID"
+                        column="G_ID"
+                        type="java.lang.Integer"
+                        length="22"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">GID</param>
+                        </generator>
+                </id>
+
+
+                <property
+                        name="gUserID"
+                        column="G_USERID"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+
+                <property
+                        name="gUserName"
+                        column="G_USERNAME"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="gCourseID"
+                        column="G_COURSEID"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+
+                <property
+                        name="gCourseName"
+                        column="G_COURSENAME"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="gCGrade"
+                        column="G_C_GRADE"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="gCTime"
+                        column="G_C_TIME"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="gBak1"
+                        column="G_BAK1"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="gBak2"
+                        column="G_BAK2"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="gBak3"
+                        column="G_BAK3"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+        </class>
+
+
+</hibernate-mapping>

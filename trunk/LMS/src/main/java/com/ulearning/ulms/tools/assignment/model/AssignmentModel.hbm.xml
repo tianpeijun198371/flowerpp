@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.assignment.model.AssignmentModel"
+                table="T_ASSIGNMENT_TAB"
+                >
+
+                <id
+                        name="assignmentID"
+                        type="java.lang.Integer"
+                        column="ASSIGNMENTID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">AssignmentID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="parentID"
+                        type="java.lang.Integer"
+                        column="PARENTID"
+                        />
+
+                <property
+                        name="courseID"
+                        type="java.lang.Integer"
+                        column="COURSEID"
+                        />
+
+                <property
+                        name="rootID"
+                        type="java.lang.Integer"
+                        column="ROOTID"
+                        />
+                <property
+                        name="orderIndex"
+                        type="java.lang.Integer"
+                        column="ORDERINDEX"
+                        />
+                <property
+                        name="name"
+                        type="java.lang.String"
+                        column="NAME"
+                        not-null="true"
+                        length="50"
+                        />
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        />
+                <property
+                        name="isViewable"
+                        type="java.lang.String"
+                        column="ISVIEWABLE"
+                        length="1"
+                        />
+                <property
+                        name="linkFileUrl"
+                        type="java.lang.String"
+                        column="LINKFILEURL"
+                        length="255"
+                        />
+                <property
+                        name="linkFileName"
+                        type="java.lang.String"
+                        column="LINKFILENAME"
+                        length="50"
+                        />
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="1"
+                        />
+                <property
+                        name="fileType"
+                        type="java.lang.String"
+                        column="FILETYPE"
+                        length="1"
+                        />
+                <property
+                        name="isTrackNumber"
+                        type="java.lang.String"
+                        column="ISTRACKNUMBER"
+                        length="1"
+                        />
+                <property
+                        name="viewNumber"
+                        type="java.lang.Integer"
+                        column="VIEWNUMBER"
+                        length="22"
+                        />
+                <property
+                        name="isAvailable"
+                        type="java.lang.String"
+                        column="ISAVAILABLE"
+                        length="1"
+                        />
+                <property
+                        name="canDelete"
+                        type="java.lang.String"
+                        column="canDelete"
+                        length="1"
+                        />
+
+                <property
+                        name="createTime"
+                        type="java.sql.Date"
+                        column="CREATETIME"
+                        length="7"
+                        />
+                <property
+                        name="exerciseType"
+                        type="java.lang.String"
+                        column="exerciseType"
+                        length="1"
+                        />
+                <property
+                        name="disAfterTime"
+                        type="java.sql.Date"
+                        column="DISAFTERTIME"
+                        length="7"
+                        />
+                <property
+                        name="disUntilTime"
+                        type="java.sql.Date"
+                        column="DISUNTILTIME"
+                        length="7"
+                        />
+
+                <!-- Associations -->
+
+                <!-- bi-directional many-to-one association to CcourseTab -->
+                <!--
+                <many-to-one
+                    name="ccourseTab"
+                    class="ulms.hibernate.CcourseTab"
+                    not-null="true"
+                >
+                    <column name="COURSEID" />
+                </many-to-one>
+                -->
+
+        </class>
+</hibernate-mapping>

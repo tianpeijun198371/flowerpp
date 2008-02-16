@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.content.schoolbook.model.MTeachmailbillitemTab"
+               table="M_TEACHMAILBILLITEM_TAB">
+                <id column="TITEMID" name="titemid" type="int">
+                        <generator class="sequence">
+                                <param name="sequence">titemid</param>
+                        </generator>
+                </id>
+                <property column="TCMLID" length="10" name="tcmlid" type="int"/>
+                <property column="BSIFID" length="10" name="bsifid" type="int"/>
+                <property column="BSIFBOOKNAME" length="200" name="bsifbookname" type="java.lang.String"/>
+                <property column="TCMITEM_PRICE" length="6" name="tcmitemPrice" type="double"/>
+                <property column="TCMITEM_QUANTITY" length="10" name="tcmitemQuantity" type="int"/>
+                <property column="REMARK1" length="50" name="remark1" type="java.lang.String"/>
+                <property column="REMARK2" length="50" name="remark2" type="java.lang.String"/>
+                <property column="REMARK3" length="50" name="remark3" type="java.lang.String"/>
+                <property column="REMARK4" length="50" name="remark4" type="java.lang.String"/>
+                <property column="REMARK5" length="50" name="remark5" type="java.lang.String"/>
+        </class>
+</hibernate-mapping>

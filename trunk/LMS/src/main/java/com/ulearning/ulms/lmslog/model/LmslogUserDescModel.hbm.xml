@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.lmslog.model.LmslogUserDescModel"
+                table="T_LMSLOGUSERDESC_TAB"
+                >
+
+                <id
+                        name="loguserdescid"
+                        type="int"
+                        column="LOGUSERDESCID"
+                        >
+                        <generator class="assigned"/>
+                </id>
+
+                <property
+                        name="usertype"
+                        type="int"
+                        column="USERTYPE"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="usertypedesc"
+                        type="java.lang.String"
+                        column="USERTYPEDESC"
+                        not-null="true"
+                        length="30"
+                        />
+                <property
+                        name="userdesc"
+                        type="java.lang.String"
+                        column="USERDESC"
+                        length="50"
+                        />
+
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

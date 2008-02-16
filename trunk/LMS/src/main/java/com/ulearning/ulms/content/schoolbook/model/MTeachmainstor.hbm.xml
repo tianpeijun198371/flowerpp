@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.content.schoolbook.model.MTeachmainstor" table="M_TEACHMAINSTOR">
+                <id column="TCMAINID" name="id" type="long">
+                        <generator class="sequence">
+                                <param name="sequence">TCMAINID</param>
+                        </generator>
+                </id>
+                <property column="TCMAINDATE" length="26" name="tcmaindate" type="timestamp"/>
+                <property column="TCMAINOPERATOR" length="50" name="tcmainoperator" type="string"/>
+                <property column="TCMAINMEMO" length="200" name="tcmainmemo" type="string"/>
+                <property column="TCMAINAUDMARK" length="10" name="tcmainaudmark" type="integer"/>
+                <property column="TCMAINAUDMAN" length="50" name="tcmainaudman" type="string"/>
+                <property column="TCMAINMODE" length="10" name="tcmainmode" type="integer"/>
+                <property column="INMAINMARK" length="10" name="inmainmark" type="integer"/>
+                <property column="TCMAINTRAN" length="50" name="tcmaintran" type="string"/>
+                <property column="TCMAINUSER" length="50" name="tcmainuser" type="string"/>
+                <property column="REMARK1" length="50" name="remark1" type="string"/>
+                <property column="REMARK2" length="50" name="remark2" type="string"/>
+                <property column="REMARK3" length="50" name="remark3" type="string"/>
+        </class>
+</hibernate-mapping>

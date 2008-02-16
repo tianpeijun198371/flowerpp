@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.course.model.CourseContentModel"
+                table="C_COURSECONTENTTREENODE_TAB"
+                >
+
+                <id
+                        name="nodeid"
+                        type="int"
+                        column="NODEID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">NodeID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="nodetitle"
+                        type="java.lang.String"
+                        column="NODETITLE"
+                        not-null="true"
+                        length="255"
+                        />
+                <property
+                        name="relationid"
+                        type="int"
+                        column="RELATIONID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="1"
+                        />
+                <property
+                        name="nodetype"
+                        type="java.lang.String"
+                        column="NODETYPE"
+                        length="1"
+                        />
+                <property
+                        name="isuserful"
+                        type="java.lang.String"
+                        column="ISUSERFUL"
+                        length="1"
+                        />
+                <property
+                        name="isopenguest"
+                        type="java.lang.String"
+                        column="ISOPENGUEST"
+                        length="1"
+                        />
+                <property
+                        name="iscontent"
+                        type="java.lang.String"
+                        column="ISCONTENT"
+                        length="1"
+                        />
+                <property
+                        name="link"
+                        type="java.lang.String"
+                        column="LINK"
+                        length="255"
+                        />
+                <property
+                        name="ishyperlink"
+                        type="java.lang.String"
+                        column="ISHYPERLINK"
+                        length="1"
+                        />
+                <property
+                        name="isview"
+                        type="java.lang.String"
+                        column="ISVIEW"
+                        length="1"
+                        />
+                <property
+                        name="depth"
+                        type="int"
+                        column="DEPTH"
+                        length="22"
+                        />
+                <property
+                        name="parentid"
+                        type="int"
+                        column="PARENTID"
+                        length="22"
+                        />
+                <property
+                        name="createdate"
+                        type="java.util.Date"
+                        column="CREATEDATE"
+                        length="7"
+                        />
+                <property
+                        name="lastmoddate"
+                        type="java.util.Date"
+                        column="LASTMODDATE"
+                        length="7"
+                        />
+                <property
+                        name="orderindex"
+                        type="int"
+                        column="ORDERINDEX"
+                        length="22"
+                        />
+                <property
+                        name="catalog"
+                        type="java.lang.String"
+                        column="CATALOG"
+                        length="255"
+                        />
+        </class>
+</hibernate-mapping>

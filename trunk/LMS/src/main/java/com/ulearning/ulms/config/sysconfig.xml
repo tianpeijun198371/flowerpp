@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+ Copyright (c) 2000-2004.Huaxia Dadi Distance Learning Services Co.,Ltd.
+ All rights reserved.
+ 
+ This software is the confidential and proprietary information of Huaxia Dadi Distance Learning Services Co.,Ltd.
+ You shall not disclose such Confidential Information.
+-->
+<project name='ulms'>
+        <product-name>ULMS</product-name>
+
+        <version>2.1.9</version>
+        <version-major>4</version-major>
+        <version-minor>1</version-minor>
+        <version-iteration>8</version-iteration>
+
+        <build-date>2007-8-10 15:10:10</build-date>
+
+        <contextroot>/ulms</contextroot>
+
+        <datesource>ulms_datesource</datesource>
+
+        <try-date>20080525</try-date>
+</project>
