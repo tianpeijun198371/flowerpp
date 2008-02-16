@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.admin.topTen.model.TopTenModel"
+                table="T_TopTen_Tab"
+                >
+
+                <id
+                        name="id"
+                        type="int"
+                        column="ID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">ID</param>
+                        </generator>
+                </id>
+                <property
+                        name="name"
+                        column="name"
+                        type="java.lang.String"
+                        not-null="true"
+                        length="50"
+                        />
+                <property
+                        name="type"
+                        column="type"
+                        type="java.lang.String"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="ct"
+                        column="c_t"
+                        type="java.lang.String"
+                        not-null="true"
+                        length="50"
+                        />
+                <property
+                        name="creattime"
+                        column="creattime"
+                        type="java.sql.Date"
+                        length="23"
+                        />
+                <property
+                        name="duty"
+                        column="duty"
+                        type="java.lang.String"
+                        not-null="true"
+                        length="50"
+                        />
+                <property
+                        name="link"
+                        column="link"
+                        type="java.lang.String"
+                        length="50"
+                        />
+                <property
+                        name="description"
+                        column="description"
+                        type="java.lang.String"
+                        length="500"
+                        />
+                <property
+                        name="isDisplay"
+                        column="is_display"
+                        type="java.lang.String"
+                        length="10"
+                        />
+                <property
+                        name="grade"
+                        column="grade"
+                        type="int"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="desc0"
+                        column="desc0"
+                        type="java.lang.String"
+                        length="50"
+                        />
+                <property
+                        name="desc1"
+                        column="desc1"
+                        type="java.lang.String"
+                        length="50"
+                        />
+                <!-- Associations -->
+                <!-- derived association(s) for compound key -->
+                <!-- end of derived association(s) -->
+
+
+        </class>
+</hibernate-mapping>

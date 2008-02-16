@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.admin.fluxManage.model.FluxModel"
+                table="T_Flux_TAB"
+                >
+                <id
+                        name="fluxID"
+                        type="int"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">fluxID</param>
+                        </generator>
+                </id>
+                <property
+                        name="orgID"
+                        type="int"
+                        length="22"
+                        />
+                <property
+                        name="clientID"
+                        type="int"
+                        length="22"
+                        />
+                <property
+                        name="clientLoginName"
+                        type="java.lang.String"
+                        length="50"
+                        />
+                <property
+                        name="clientUserName"
+                        type="java.lang.String"
+                        length="100"
+                        />
+                <property
+                        name="clientIP"
+                        type="java.lang.String"
+                        length="50"
+                        />
+                <property
+                        name="clientBrowserName"
+                        type="java.lang.String"
+                        length="50"
+                        />
+                <property
+                        name="clientBrowserVersion"
+                        type="java.lang.String"
+                        length="50"
+                        />
+                <property
+                        name="clientOsName"
+                        type="java.lang.String"
+                        length="50"
+                        />
+                <property
+                        name="clientOsVersion"
+                        type="java.lang.String"
+                        length="50"
+                        />
+                <property
+                        name="flux"
+                        type="long"
+                        />
+                <property
+                        name="createDate"
+                        type="java.util.Date"
+                        />
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        length="500"
+                        />
+                <!-- Associations -->
+        </class>
+</hibernate-mapping>

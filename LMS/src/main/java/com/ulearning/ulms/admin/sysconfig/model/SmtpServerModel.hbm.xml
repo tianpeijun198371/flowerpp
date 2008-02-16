@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.admin.sysconfig.model.SmtpServerModel"
+                table="T_SMTPSERVER_TAB"
+                >
+
+                <id
+                        name="orgid"
+                        type="int"
+                        column="ORGID"
+                        >
+                        <generator class="assigned"/>
+                </id>
+
+                <property
+                        name="host"
+                        type="java.lang.String"
+                        column="HOST"
+                        length="32"
+                        />
+                <property
+                        name="username"
+                        type="java.lang.String"
+                        column="USERNAME"
+                        length="32"
+                        />
+                <property
+                        name="password"
+                        type="java.lang.String"
+                        column="PASSWORD"
+                        length="32"
+                        />
+
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

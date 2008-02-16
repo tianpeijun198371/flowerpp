@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='GBK'?>
+<!--
+ Copyright (c) 2000-2004.Huaxia Dadi Distance Learning Services Co.,Ltd.
+ All rights reserved.
+
+ This software is the confidential and proprietary information of Huaxia Dadi Distance Learning Services Co.,Ltd.
+ You shall not disclose such Confidential Information.
+-->
+<project name='ulms'>
+        <appserver>jboss-3.2.5</appserver>
+
+        <!--  项目名称,大写，目前有GZW XLN  -->
+        <project-name>XLN</project-name>
+
+        <!--  mssql2000 oracle  -->
+        <database>oracle</database>                  
+
+        <smtp-server-host>smtp.edu-edu.com.cn</smtp-server-host>
+        <smtp-server-user>huangsb@edu-edu.com.cn</smtp-server-user>
+        <smtp-server-pwd>huangsb</smtp-server-pwd>
+
+        <upload-physical-path>
+                D:\appservers\yancao_jboss3.2.7_9070\server\default\deploy\jbossweb-tomcat50.sar\ROOT.war\upload\
+        </upload-physical-path>
+        <upload-virtual-path>http://192.168.0.201:9070/upload/</upload-virtual-path>
+        <upload-max-allowed-file-size>520024288000</upload-max-allowed-file-size>
+
+        <ldap-providerURL>ldap://ulms.edu-edu.com.cn:389</ldap-providerURL>
+        <ldap-baseDN>o=edu-edu</ldap-baseDN>
+        <ldap-username>cn=root</ldap-username>
+        <ldap-provider>OpenLDAP</ldap-provider>
+        <!--  Integration variables  -->
+        <oracle-jdbc-url>jdbc:oracle:thin:@192.168.0.201:1521:ora902</oracle-jdbc-url>
+        <oracle-jdbc-user>ulms_xln</oracle-jdbc-user>
+        <oracle-jdbc-pwd>ulms_xln</oracle-jdbc-pwd>
+
+        <mssql-jdbc-url>jdbc:microsoft:sqlserver://172.20.26.2:1433;DatabaseName=ulms_cqj1</mssql-jdbc-url>
+        <mssql-jdbc-user>ulms_cqj1</mssql-jdbc-user>
+        <mssql-jdbc-pwd>ulms_cqj1</mssql-jdbc-pwd>
+
+        <DB2-jdbc-url>jdbc:db2://192.168.0.205:6789/ELMS_YC</DB2-jdbc-url>
+        <DB2-jdbc-user>db2admin</DB2-jdbc-user>
+        <DB2-jdbc-pwd>db2008</DB2-jdbc-pwd>
+
+        <!--  Integration variables  -->
+        <is-integrate-exam>false</is-integrate-exam>
+        <exam-jdbc-url>jdbc:microsoft:sqlserver://210.51.171.234:1433;DatabaseName=ILearning2004</exam-jdbc-url>
+        <exam-user>sa</exam-user>
+        <exam-pwd>sa</exam-pwd>
+
+        <exam-http-url>http://210.51.171.236/ulms_exam/</exam-http-url>
+
+        <!--  meeting server service url  -->
+        <vclass-http-url>http://221.174.24.144:803/SetMeeting.asmx</vclass-http-url>
+        <!--<vclass-http-url>http://211.99.66.16/vclass/meetinggateway.aspx?</vclass-http-url>-->
+
+        <is-integrate-vod>true</is-integrate-vod>
+        <vod-url>http://210.51.173.134:8089/</vod-url>
+
+        <is-integrate-blog>false</is-integrate-blog>
+        <is-integrate-chat>false</is-integrate-chat>
+
+</project>

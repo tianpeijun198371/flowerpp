@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.finance.model.FuserAccountDetailModel"
+                table="F_UserAccountDetail_TAB"
+                >
+
+
+                <id
+                        name="uadetailId"
+                        type="int"
+                        column="uaDetailID"
+                        >
+                        <generator class="sequence">
+
+                                <param name="sequence">uadetailId</param>
+
+                        </generator>
+                </id>
+
+                <property
+                        name="userId"
+                        type="int"
+                        column="UserID"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="uadetailUserName"
+                        type="java.lang.String"
+                        column="uaDetailUserName"
+                        length="50"
+                        />
+                <property
+                        name="uadetailInOutType"
+                        type="int"
+                        column="uaDetailInOutType"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="uadetailTypeId"
+                        type="int"
+                        column="uaDetailTypeID"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="uadetailAmount"
+                        type="double"
+                        column="uaDetailAmount"
+                        length="8"
+                        />
+                <property
+                        name="uadetailDate"
+                        type="java.util.Date"
+                        column="uaDetailDate"
+                        length="23"
+                        />
+                <property
+                        name="uadetailOperatorId"
+                        type="int"
+                        column="uaDetailOperatorID"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="uadetailOperatorName"
+                        type="java.lang.String"
+                        column="uaDetailOperatorName"
+                        length="50"
+                        />
+                <property
+                        name="uadetailEntityValue"
+                        type="int"
+                        column="uaDetailEntityValue"
+                        not-null="true"
+                        length="10"
+                        />
+                <property
+                        name="uadetailRemitType"
+                        type="int"
+                        column="uaDetailRemitType"
+                        length="10"
+                        />
+                <property
+                        name="uadetailInvoice"
+                        type="int"
+                        column="uaDetailInvoice"
+                        length="10"
+                        />
+                <property
+                        name="uadetailAudit"
+                        type="int"
+                        column="uaDetailAudit"
+                        length="10"
+                        />
+                <property
+                        name="uadetailMemo"
+                        type="java.lang.String"
+                        column="uaDetailMemo"
+                        length="200"
+                        />
+                <property
+                        name="uadetailRemark1"
+                        type="java.lang.String"
+                        column="uaDetailRemark1"
+                        length="150"
+                        />
+                <property
+                        name="uadetailRemark2"
+                        type="java.lang.String"
+                        column="uaDetailRemark2"
+                        length="150"
+                        />
+                <property
+                        name="aspId"
+                        type="int"
+                        column="AspID"
+                        length="10"
+                        />
+                <property
+                        name="orgId"
+                        type="int"
+                        column="OrgID"
+                        length="10"
+                        />
+                <!-- Associations -->
+        </class>
+</hibernate-mapping>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.content.model.RPhysicsresModel"
+                table="R_PhysicsRes_tab"
+                >
+                <id
+                        name="resId"
+                        type="int"
+                        column="resid"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">resId</param>
+                        </generator>
+
+                </id>
+                <property column="aspID" length="10" name="aspid" not-null="true" type="int"/>
+                <property column="orgID" length="10" name="orgid" not-null="true" type="int"/>
+                <property column="resCode" length="50" name="rescode" type="java.lang.String"/>
+                <property column="resName" length="100" name="resname" type="java.lang.String"/>
+                <property column="resSize" length="200" name="ressize" type="java.lang.String"/>
+                <property column="resFix" length="200" name="resfix" type="java.lang.String"/>
+                <property column="resState" length="10" name="resstate" type="int"/>
+                <property column="resOther" length="200" name="resother" type="java.lang.String"/>
+                <property column="resType" length="10" name="restype" type="int"/>
+                <property column="resManageId" length="10" name="resmanageid" type="int"/>
+                <property column="resManageName" length="20" name="resmanagename" type="java.lang.String"/>
+                <property column="resRemark1" length="50" name="resremark1" type="java.lang.String"/>
+                <property column="resRemark2" length="50" name="resremark2" type="java.lang.String"/>
+                <property column="resRemark3" length="50" name="resremark3" type="java.lang.String"/>
+        </class>
+</hibernate-mapping>

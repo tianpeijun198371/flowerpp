@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class
+                name="com.ulearning.ulms.tools.report.general.model.RChargeitemModel"
+                table="R_CHARGEITEM_TAB">
+
+                <id
+                        name="chargeid"
+                        type="int"
+                        column="CHARGEID">
+
+
+                        <generator class="sequence">
+                                <param name="sequence">chargeid</param>
+                        </generator>
+                </id>
+
+                <property column="CHARGENAME" length="50" name="chargename" type="java.lang.String"/>
+                <property column="CHARGEWORK" length="100" name="chargework" type="java.lang.String"/>
+                <property column="CHARGESENDMODE" length="10" name="chargesendmode" type="int"/>
+                <property column="CHARGESUM" length="6" name="chargesum" type="double"/>
+                <property column="CHARGECIRCS" length="10" name="chargecircs" type="int"/>
+                <property column="CHARGEINVOMARK" length="10" name="chargeinvomark" type="int"/>
+                <property column="CHARGEPOSMARK" length="10" name="chargeposmark" type="int"/>
+                <property column="CHARGEPHONE" length="50" name="chargephone" type="java.lang.String"/>
+                <property column="CHARGEPOSCODE" length="10" name="chargeposcode" type="java.lang.String"/>
+                <property column="CHARGEPROVINCE" length="100" name="chargeprovince" type="java.lang.String"/>
+                <property column="CHARGEMEMO" length="200" name="chargememo" type="java.lang.String"/>
+                <property column="REMARK1" length="50" name="remark1" type="java.lang.String"/>
+                <property column="REMARK2" length="50" name="remark2" type="java.lang.String"/>
+                <property column="REMARK3" length="50" name="remark3" type="java.lang.String"/>
+        </class>
+</hibernate-mapping>

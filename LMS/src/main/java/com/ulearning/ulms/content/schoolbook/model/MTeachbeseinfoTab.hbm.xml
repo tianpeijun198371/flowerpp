@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.content.schoolbook.model.MTeachbeseinfoTab" table="M_TEACHBESEINFO_TAB">
+                <id column="BSIFID" name="id" type="long">
+                        <generator class="sequence">
+                                <param name="sequence">bsifid</param>
+                        </generator>
+                </id>
+                <property column="ISBN" length="20" name="isbn" type="string"/>
+                <property column="BSIFBOOKNAME" length="200" name="bsifbookname" not-null="true" type="string"/>
+                <property column="BSIFSORTID" length="10" name="bsifsortid" type="integer"/>
+                <property column="BDIFSORTNAME" length="50" name="bdifsortname" type="string"/>
+                <property column="BSIFPUBLISHID" length="10" name="bsifpublishid" type="integer"/>
+                <property column="BSIFPUBLISHNAME" length="200" name="bsifpublishname" type="string"/>
+                <property column="BSIFPUBLISHDATE" length="26" name="bsifpublishdate" type="java.sql.Date"/>
+                <property column="BSIFAUTHOR" length="200" name="bsifauthor" type="string"/>
+                <property column="BSIFEDITOR" length="200" name="bsifeditor" type="string"/>
+                <property column="BSIFHOLDTRUE" length="200" name="bsifholdtrue" type="string"/>
+                <property column="BSIFIMPRESSION" length="10" name="bsifimpression" type="integer"/>
+                <property column="BSIFWORD" length="9" name="bsifword" type="double"/>
+                <property column="BSIFAPPENDDATE" length="26" name="bsifappenddate" type="java.sql.Date"/>
+                <property column="BSIFAPPENDDEPT" length="100" name="bsifappenddept" type="string"/>
+                <property column="BSIFPRICE" length="6" name="bsifprice" type="float"/>
+                <property column="BSIFMAILPRICE" length="6" name="bsifmailprice" type="float"/>
+                <property column="BSIFINTR" length="32700" name="bsifintr" type="string"/>
+                <property column="BSIFCOVER" length="300" name="bsifcover" type="string"/>
+                <property column="BSIFCATALONG" length="32700" name="bsifcatalong" type="string"/>
+                <property column="BSIFMEMO" length="200" name="bsifmemo" type="string"/>
+                <property column="REMARK1" length="50" name="remark1" type="string"/>
+                <property column="REMARK2" length="32700" name="remark2" type="string"/>
+                <property column="REMARK3" length="50" name="remark3" type="string"/>
+                <property column="REMARK4" length="32700" name="remark4" type="string"/>
+                <property column="REMARK5" length="50" name="remark5" type="string"/>
+        </class>
+</hibernate-mapping>

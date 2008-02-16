@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.report.custom.report.model.ReportModel"
+                table="R_REPORT_TAB"
+                >
+
+                <id
+                        name="reportID"
+                        type="java.lang.Integer"
+                        column="REPORTID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">reportID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="reportName"
+                        type="java.lang.String"
+                        column="REPORTNAME"
+                        not-null="true"
+                        length="50"
+                        />
+                <property
+                        name="reportType"
+                        type="java.lang.String"
+                        column="REPORTTYPE"
+                        length="6"
+                        />
+                <property
+                        name="reportFormat"
+                        type="java.lang.String"
+                        column="REPORTFORMAT"
+                        length="1"
+                        />
+                <property
+                        name="modulID"
+                        type="java.lang.Integer"
+                        column="MODULID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="relationID"
+                        type="java.lang.Integer"
+                        column="RELATIONID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="categoryID"
+                        type="java.lang.Integer"
+                        column="CATEGORYID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="jasperReportXMLPath"
+                        type="java.lang.String"
+                        column="JASPERREPORTXMLPATH"
+                        length="200"
+                        />
+                <property
+                        name="userID"
+                        type="java.lang.Integer"
+                        column="USERID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="createDate"
+                        type="java.util.Date"
+                        column="CREATEDATE"
+                        length="7"
+                        />
+                <property
+                        name="updateDate"
+                        type="java.util.Date"
+                        column="UPDATEDATE"
+                        length="7"
+                        />
+                <property
+                        name="remark"
+                        type="java.lang.String"
+                        column="REMARK"
+                        length="400"
+                        />
+
+                <!-- Associations -->
+
+                <!-- bi-directional many-to-one association to UuserTab -->
+                <!--
+      <many-to-one
+          name="uuserTab"
+          class="ulms.hibernate.UuserTab"
+          not-null="true"
+      >
+          <column name="USERID" />
+      </many-to-one>
+          -->
+                <!-- bi-directional one-to-many association to RcustomfielditemTab -->
+                <!--
+      <set
+          name="rcustomfielditemTabs"
+          lazy="true"
+          inverse="true"
+                  cascade="none"
+      >
+          <key>
+              <column name="REPORTID" />
+          </key>
+          <one-to-many
+              class="ulms.hibernate.RcustomfielditemTab"
+          />
+      </set>
+          -->
+                <!-- bi-directional one-to-many association to RconditionitemrelationTab -->
+                <!--
+      <set
+          name="rconditionitemrelationTabs"
+          lazy="true"
+          inverse="true"
+                  cascade="none"
+      >
+          <key>
+              <column name="REPORTID" />
+          </key>
+          <one-to-many
+              class="ulms.hibernate.RconditionitemrelationTab"
+          />
+      </set>
+          -->
+                <!-- bi-directional one-to-many association to RtaskTab -->
+                <!--
+      <set
+          name="rtaskTabs"
+          lazy="true"
+          inverse="true"
+                  cascade="none"
+      >
+          <key>
+              <column name="REPORTID" />
+          </key>
+          <one-to-many
+              class="ulms.hibernate.RtaskTab"
+          />
+      </set>
+          -->
+                <!-- bi-directional one-to-many association to RcustomsubreportTab -->
+                <!--
+      <set
+          name="rcustomsubreportTabs"
+          lazy="true"
+          inverse="true"
+                  cascade="none"
+      >
+          <key>
+              <column name="REPORTID" />
+          </key>
+          <one-to-many
+              class="ulms.hibernate.RcustomsubreportTab"
+          />
+      </set>
+          -->
+                <!-- bi-directional one-to-many association to RcustomconditionitemTab -->
+                <!--
+                <set
+                    name="rcustomconditionitemTabs"
+                    lazy="true"
+                    inverse="true"
+                            cascade="none"
+                >
+                    <key>
+                        <column name="REPORTID" />
+                    </key>
+                    <one-to-many
+                        class="ulms.hibernate.RcustomconditionitemTab"
+                    />
+                </set>
+                -->
+        </class>
+</hibernate-mapping>

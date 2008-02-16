@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the MIDdlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/mIDdlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.evaluate.model.FeedBackModel"
+                table="E_Feedback_Tab">
+
+                <id
+                        name="feedbackID"
+                        type="int"
+                        column="FEEDBACKSID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">feedbacksID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="userID"
+                        type="int"
+                        column="USERID"
+                        not-null="true"
+                        />
+                <property
+                        name="aspID"
+                        type="int"
+                        />
+                <property
+                        name="parentID"
+                        type="int"
+                        />
+                <property
+                        name="status"
+                        type="int"
+                        />
+                <property
+                        name="relationID"
+                        type="int"
+                        column="RELATIONID"
+                        not-null="true"
+                        />
+                <property
+                        name="relationName"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="1"
+                        />
+
+                <property
+                        name="score"
+                        type="java.lang.String"
+                        column="SCORE"
+                        not-null="true"
+                        length="64"
+                        />
+
+                <property
+                        name="title"
+                        type="java.lang.String"
+                        column="TITLE"
+                        length="300"
+                        />
+
+                <property
+                        name="feedBack"
+                        type="java.lang.String"
+                        column="FEEDBACK"
+                        length="3000"
+                        />
+
+                <property
+                        name="userName"
+                        type="java.lang.String"
+                        column="USERNAME"
+                        length="200"
+                        />
+
+                <property
+                        name="IsAnonymous"
+                        type="java.lang.String"
+                        column="ISANONYMOUS"
+                        length="1"
+                        />
+
+                <property
+                        name="email"
+                        type="java.lang.String"
+                        column="EMAIL"
+                        length="200"
+                        />
+
+                <property
+                        name="source"
+                        type="java.lang.String"
+                        column="SOURCE"
+                        length="200"
+                        />
+
+                <property
+                        name="createDate"
+                        type="java.util.Date"
+                        column="CREATEDATE"
+                        not-null="true"
+                        length="7"
+                        />
+
+                <property
+                        name="remark"
+                        type="java.lang.String"
+                        column="REMARK"
+                        length="50"
+                        />
+
+                <property
+                        name="remark1"
+                        type="java.lang.String"
+                        column="REMARK1"
+                        length="50"
+                        />
+
+                <property
+                        name="remark2"
+                        type="java.lang.String"
+                        column="REMARK2"
+                        length="50"
+                        />
+
+                <property
+                        name="remark3"
+                        type="java.lang.String"
+                        column="REMARK3"
+                        length="50"
+                        />
+
+                <property
+                        name="remark4"
+                        type="java.lang.String"
+                        column="REMARK4"
+                        length="50"
+                        />
+
+
+                <!-- Associations -->
+        </class>
+</hibernate-mapping>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the MIDdlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/mIDdlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.evaluate.model.ERecordPointConversionModel"
+                table="E_ERecordPointConversion_Tab">
+
+                <id
+                        name="actionID"
+                        type="int"
+                        column="ACTIONID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">actionID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="point"
+                        type="int"
+                        column="POINT"
+                        not-null="true"
+                        />
+
+                <!-- Associations -->
+        </class>
+</hibernate-mapping>

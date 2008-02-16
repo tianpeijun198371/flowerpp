@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.organ.model.OrganUserModel"
+                table="TM_ORGUSER_TAB"
+                >
+
+                <composite-id name="comp_id" class="com.ulearning.ulms.organ.model.OrganUserModelPK">
+                        <key-property
+                                name="orgid"
+                                column="ORGID"
+                                type="int"
+                                length="22"
+                                />
+                        <key-property
+                                name="userid"
+                                column="USERID"
+                                type="int"
+                                length="22"
+                                />
+                </composite-id>
+
+                <property
+                        name="type"
+                        type="int"
+                        column="TYPE"
+                        length="22"
+                        />
+        </class>
+</hibernate-mapping>

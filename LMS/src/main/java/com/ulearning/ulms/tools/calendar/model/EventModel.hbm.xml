@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.calendar.model.EventModel"
+                table="T_CALENDAR_TAB"
+                >
+
+                <id
+                        name="eventid"
+                        type="int"
+                        column="EVENTID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">
+                                        EventID
+                                </param>
+                        </generator>
+                </id>
+
+                <property
+                        name="relationid"
+                        type="int"
+                        column="RELATIONID"
+                        length="22"
+                        />
+                <property
+                        name="type"
+                        type="int"
+                        column="TYPE"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="userid"
+                        type="int"
+                        column="USERID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="orgid"
+                        type="int"
+                        column="ORGID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="eventdate"
+                        type="java.sql.Date"
+                        column="EVENTDATE"
+                        not-null="true"
+                        length="7"
+                        />
+                <property
+                        name="eventstarthour"
+                        type="int"
+                        column="EVENTSTARTHOUR"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="eventstophour"
+                        type="int"
+                        column="EVENTSTOPHOUR"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="eventstartmin"
+                        type="int"
+                        column="EVENTSTARTMIN"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="eventstopmin"
+                        type="int"
+                        column="EVENTSTOPMIN"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="eventtitle"
+                        type="java.lang.String"
+                        column="EVENTTITLE"
+                        not-null="true"
+                        length="200"
+                        />
+                <property
+                        name="eventdetail"
+                        type="java.lang.String"
+                        column="EVENTDETAIL"
+                        length="3000"
+                        />
+                <property
+                        name="isremind"
+                        type="java.lang.String"
+                        column="ISREMIND"
+                        length="1"
+                        />
+                <property
+                        name="remindtime"
+                        type="java.lang.String"
+                        column="REMINDTIME"
+                        length="50"
+                        />
+
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

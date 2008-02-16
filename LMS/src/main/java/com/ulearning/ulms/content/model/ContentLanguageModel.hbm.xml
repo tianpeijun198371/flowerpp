@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.content.model.ContentLanguageModel"
+                table="R_CONTENTLANGUAGE_TAB"
+                >
+
+                <id
+                        name="languageID"
+                        type="int"
+                        column="LANGUAGEID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">languageID</param>
+                        </generator>
+                </id>
+                <property
+                        name="language"
+                        type="java.lang.String"
+                        column="LANGUAGE"
+                        >
+                </property>
+                <property
+                        name="languageName"
+                        type="java.lang.String"
+                        column="LANGUAGENAME"
+                        not-null="true"
+                        length="500"
+                        />
+                <property
+                        name="remark"
+                        type="java.lang.String"
+                        column="REMARK"
+                        length="500"
+                        />
+                <property
+                        name="isDefault"
+                        type="java.lang.String"
+                        column="ISDEFAULT"
+                        length="1"
+                        />
+                <property
+                        name="createDate"
+                        type="java.util.Date"
+                        column="CREATEDATE"
+                        length="7"
+                        />
+                <property
+                        name="lastModDate"
+                        type="java.util.Date"
+                        column="LASTMODDATE"
+                        length="7"
+                        />
+                <property
+                        name="remark1"
+                        type="java.lang.String"
+                        column="REMARK1"
+                        length="150"
+                        />
+                <property
+                        name="remark2"
+                        type="java.lang.String"
+                        column="REMARK2"
+                        length="150"
+                        />
+                <property
+                        name="remark3"
+                        type="java.lang.String"
+                        column="REMARK3"
+                        length="150"
+                        />
+                <property
+                        name="status"
+                        type="java.lang.String"
+                        column="STATUS"
+                        length="1"
+                        />
+
+                <!-- Associations -->
+
+                <!-- bi-directional one-to-many association to RcontentTab -->
+                <!--<set
+                    name="contentModels"
+                    lazy="true"
+                    inverse="true"
+                            cascade="none"
+                >
+                    <key>
+                        <column name="LANGUAGE" />
+                    </key>
+                    <one-to-many
+                        class="com.ulearning.ulms.content.model.ContentModel"
+                    />
+                </set>-->
+
+        </class>
+</hibernate-mapping>

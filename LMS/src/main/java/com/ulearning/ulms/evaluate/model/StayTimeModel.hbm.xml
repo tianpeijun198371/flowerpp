@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the MIDdlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/mIDdlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.evaluate.model.StayTimeModel"
+                table="E_StayTime_Tab">
+
+                <id
+                        name="stayTimeID"
+                        type="int"
+                        column="STAYTIMEID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">stayTimeID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="userID"
+                        type="int"
+                        column="USERID"
+                        not-null="true"
+                        />
+
+                <property
+                        name="moduleID"
+                        type="int"
+                        column="MODULEID"
+                        not-null="true"
+                        />
+
+
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="1"
+                        />
+
+                <property
+                        name="parentID"
+                        type="int"
+                        column="PARENTID"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <property
+                        name="createDate"
+                        type="java.util.Date"
+                        column="CREATEDATE"
+                        not-null="true"
+                        length="7"
+                        />
+
+                <property
+                        name="LastUpdateDate"
+                        type="java.util.Date"
+                        column="LASTUPDATEDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="remark1"
+                        type="java.lang.String"
+                        column="REMARK1"
+                        length="150"
+                        />
+
+                <property
+                        name="remark2"
+                        type="java.lang.String"
+                        column="REMARK2"
+                        length="150"
+                        />
+
+                <property
+                        name="remark3"
+                        type="java.lang.String"
+                        column="REMARK3"
+                        length="150"
+                        />
+
+                <property
+                        name="stayTime"
+                        type="long"
+                        column="STAYTIME"
+                        not-null="true"
+                        />
+
+                <!-- Associations -->
+        </class>
+</hibernate-mapping>

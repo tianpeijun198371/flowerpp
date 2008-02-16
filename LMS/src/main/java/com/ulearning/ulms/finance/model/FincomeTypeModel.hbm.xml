@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.finance.model.FincomeTypeModel"
+                table="F_IncomeType_TAB"
+                >
+
+                <id
+                        name="incomeId"
+                        type="java.lang.Integer"
+                        column="incomeID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">incomeId</param>
+                        </generator>
+
+                </id>
+
+                <property
+                        name="incomeName"
+                        type="java.lang.String"
+                        column="incomeName"
+                        not-null="true"
+                        unique="true"
+                        length="20"
+                        />
+                <property
+                        name="incomeType"
+                        type="java.lang.Integer"
+                        column="incomeType"
+                        length="10"
+                        />
+                <property
+                        name="incomeRemark1"
+                        type="java.lang.String"
+                        column="incomeRemark1"
+                        length="150"
+                        />
+                <property
+                        name="incomeRemark2"
+                        type="java.lang.String"
+                        column="incomeRemark2"
+                        length="150"
+                        />
+
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

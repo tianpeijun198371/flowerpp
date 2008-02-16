@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.cert.Certificate.model.CertificateModel"
+                table="C_CERTIFICATE_TAB"
+                >
+
+                <id
+                        name="ctifiID"
+                        column="C_TIFI_ID"
+                        type="java.lang.Integer"
+                        length="22"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">c_tifi_id</param>
+                        </generator>
+                </id>
+
+
+                <property
+                        name="courseID"
+                        column="C_COURSE_ID"
+                        type="java.lang.Integer"
+                        length="22"
+                        />
+
+                <property
+                        name="cZuyeci"
+                        column="C_ZUYE_CI"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="cZuoyeGrade"
+                        column="C_ZUOYE_GRADE"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="cZuoyeAllGrade"
+                        column="C_ZUOYE_ALL_GRADE"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="cZuoyeMoren"
+                        column="C_ZUOYE_MOREN"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="cKaoshiID"
+                        column="C_KAOSHI_ID"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="cKaoshiTitle"
+                        column="C_KAOSHI_TITLE"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="cKaoshiBili"
+                        column="C_KAOSHI_BILI"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="cKaoshiMoren"
+                        column="C_KAOSHI_MOREN"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="cbak1"
+                        column="C_BAK1"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="cbak2"
+                        column="C_BAK2"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="cbak3"
+                        column="C_BAK3"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+        </class>
+
+
+</hibernate-mapping>

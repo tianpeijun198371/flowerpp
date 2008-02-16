@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.blog.form.CategoryForm"
+                table="T_Category_Tab">
+
+                <id name="categoryId" type="int" column="CATEGORYid">
+                        <generator class="sequence">
+                                <param name="assigned">categoryId</param>
+                        </generator>
+                </id>
+
+
+                <property
+                        name="accountId"
+                        type="int"
+                        column="ACCOUNTID"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <property
+                        name="title"
+                        type="java.lang.String"
+                        column="TITLE"
+                        length="50"
+                        />
+
+                <property
+                        name="visible"
+                        type="int"
+                        column="VISIBLE"
+                        not-null="true"
+                        length="22"
+                        />
+
+
+                <property
+                        name="type"
+                        type="int"
+                        column="TYPE"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="255"
+                        />
+
+
+        </class>
+</hibernate-mapping>

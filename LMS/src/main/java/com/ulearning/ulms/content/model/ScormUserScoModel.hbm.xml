@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.content.model.ScormUserScoModel"
+                table="R_SCORMUSERSCO_TAB"
+                >
+
+                <composite-id name="comp_id" class="com.ulearning.ulms.content.model.ScormUserScoModelPK">
+                        <key-property
+                                name="userID"
+                                column="USERID"
+                                type="int"
+                                length="22"
+                                />
+                        <key-property
+                                name="scoID"
+                                column="SCOID"
+                                type="int"
+                                length="22"
+                                />
+                </composite-id>
+
+                <property
+                        name="launch"
+                        type="java.lang.String"
+                        column="LAUNCH"
+                        length="255"
+                        />
+                <property
+                        name="parameterString"
+                        type="java.lang.String"
+                        column="PARAMETERSTRING"
+                        length="255"
+                        />
+                <property
+                        name="lessonStatus"
+                        type="java.lang.String"
+                        column="LESSONSTATUS"
+                        length="1"
+                        />
+                <property
+                        name="prerequisites"
+                        type="java.lang.String"
+                        column="PREREQUISITES"
+                        length="255"
+                        />
+                <property
+                        name="exitString"
+                        type="java.lang.String"
+                        column="EXITSTRING"
+                        length="255"
+                        />
+                <property
+                        name="entry"
+                        type="java.lang.String"
+                        column="ENTRY"
+                        length="255"
+                        />
+                <property
+                        name="masteryScore"
+                        type="int"
+                        column="MASTERYSCORE"
+                        length="6"
+                        />
+                <property
+                        name="sequence"
+                        type="int"
+                        column="SEQUENCE"
+                        length="22"
+                        />
+                <property
+                        name="itemType"
+                        type="java.lang.String"
+                        column="ITEMTYPE"
+                        length="10"
+                        />
+
+                <!-- Associations -->
+                <!-- derived association(s) for compound key -->
+                <!-- bi-directional many-to-one association to RscormitemTab -->
+                <!--<many-to-one
+          name="scormItemModel"
+              class="com.ulearning.ulms.content.model.ScormItemModel"
+              update="false"
+              insert="false"
+          >
+              <column name="SCOID" />
+          </many-to-one>-->
+
+                <!-- bi-directional many-to-one association to UuserTab -->
+                <!--<many-to-one
+          name="userModel"
+              class="com.ulearning.ulms.user.model.UserModel"
+              update="false"
+              insert="false"
+          >
+              <column name="USERID" />
+          </many-to-one>-->
+
+                <!-- end of derived association(s) -->
+
+
+        </class>
+</hibernate-mapping>

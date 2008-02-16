@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.visit.model.VisitModel"
+                table="T_VISIT_TAB"
+                >
+
+                <id
+                        name="visitID"
+                        type="int"
+                        column="VisitID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">visitID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="type"
+                        type="int"
+                        column="TYPE"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="relationID"
+                        type="int"
+                        column="RelationID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="visitNum"
+                        type="int"
+                        column="VisitNum"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="createTime"
+                        type="java.util.Date"
+                        column="CreateTime"
+                        length="7"
+                        />
+                <property
+                        name="updateTime"
+                        type="java.util.Date"
+                        column="UpdateTime"
+                        length="7"
+                        />
+
+                <property
+                        name="title"
+                        type="java.lang.String"
+                        column="TITLE"
+                        length="50"
+                        />
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="200"
+                        />
+                <property
+                        name="remark"
+                        type="java.lang.String"
+                        column="REMARK"
+                        length="200"
+                        />
+
+        </class>
+</hibernate-mapping>

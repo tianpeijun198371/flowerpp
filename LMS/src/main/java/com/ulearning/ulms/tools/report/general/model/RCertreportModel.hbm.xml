@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.tools.report.general.model.RCertreportModel"
+               table="R_CERTREPORT_TAB">
+                <id column="CERTRID" name="certrid" type="int">
+
+                        <generator class="sequence">
+                                <param name="sequence">certrid</param>
+                        </generator>
+                </id>
+
+                <property column="CERTRNAME" length="50" name="certrname" type="java.lang.String"/>
+                <property column="CERTRWORK" length="100" name="certrwork" type="java.lang.String"/>
+                <property column="CERTRSUM" length="6" name="certrsum" type="double"/>
+                <property column="CERTRPAYMARK" length="10" name="certrpaymark" type="int"/>
+                <property column="CERTRPAYSUM" length="6" name="certrpaysum" type="double"/>
+                <property column="CERTRSEEMARK" length="10" name="certrseemark" type="int"/>
+                <property column="CERTRPREPAYMODE" length="10" name="certrprepaymode" type="int"/>
+                <property column="CERTRPREPAYSUM" length="6" name="certrprepaysum" type="double"/>
+                <property column="CERTRINVOMARK" length="10" name="certrinvomark" type="int"/>
+                <property column="CERTRPOSCODE" length="10" name="certrposcode" type="java.lang.String"/>
+                <property column="CERTRPROVINCE" length="100" name="certrprovince" type="java.lang.String"/>
+                <property column="CERTRMEMO" length="200" name="certrmemo" type="java.lang.String"/>
+                <property column="REMARK1" length="50" name="remark1" type="java.lang.String"/>
+                <property column="REMARK2" length="50" name="remark2" type="java.lang.String"/>
+                <property column="REMARK3" length="50" name="remark3" type="java.lang.String"/>
+        </class>
+</hibernate-mapping>

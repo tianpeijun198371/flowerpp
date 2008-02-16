@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the MIDdlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/mIDdlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.answerquestion.model.AnswerQuestionModel"
+                table="T_ANSWERQUESTION_TAB">
+
+                <id
+                        name="aqID"
+                        type="int"
+                        column="AQID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">aqID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="submmiterID"
+                        type="int"
+                        column="SUBMMITERID"
+                        length="22"
+                        />
+
+                <property
+                        name="replyerID"
+                        type="int"
+                        column="REPLYERID"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <property
+                        name="submmiterName"
+                        type="java.lang.String"
+                        column="SUBMMITERNAME"
+                        length="255"
+                        />
+
+                <property
+                        name="replyerName"
+                        type="java.lang.String"
+                        column="REPLYERNAME"
+                        length="255"
+                        />
+
+                <property
+                        name="questionTitle"
+                        type="java.lang.String"
+                        column="QUESTIONTITLE"
+                        length="300"
+                        />
+
+                <property
+                        name="questionKey"
+                        type="java.lang.String"
+                        column="QUESTIONKEY"
+                        length="300"
+                        />
+
+                <property
+                        name="questionContent"
+                        type="java.lang.String"
+                        column="QUESTIONCONTENT"
+                        length="3000"
+                        />
+
+                <property
+                        name="questionLink"
+                        type="java.lang.String"
+                        column="QUESTIONLINK"
+                        length="255"
+                        />
+
+                <property
+                        name="questionLinkTitle"
+                        type="java.lang.String"
+                        column="QUESTIONLINKTITLE"
+                        length="200"
+                        />
+
+                <property
+                        name="answerContent"
+                        type="java.lang.String"
+                        column="ANSWERCONTENT"
+                        length="3000"
+                        />
+
+                <property
+                        name="answerLinkTitle"
+                        type="java.lang.String"
+                        column="ANSWERLINKTITLE"
+                        length="200"
+                        />
+
+                <property
+                        name="answerLink"
+                        type="java.lang.String"
+                        column="ANSWERLINK"
+                        length="255"
+                        />
+
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="2"
+                        />
+
+                <property
+                        name="parentID"
+                        type="int"
+                        column="PARENTID"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <property
+                        name="relationID"
+                        type="int"
+                        column="RELATIONID"
+                        length="22"
+                        />
+
+                <property
+                        name="relationName"
+                        type="java.lang.String"
+                        column="RELATIONNAME"
+                        length="150"
+                        />
+
+                <property
+                        name="isReply"
+                        type="java.lang.String"
+                        column="ISREPLY"
+                        length="1"
+                        />
+
+                <property
+                        name="isMessage"
+                        type="java.lang.String"
+                        column="ISMESSAGE"
+                        length="1"
+                        />
+
+                <property
+                        name="isMail"
+                        type="java.lang.String"
+                        column="ISMAIL"
+                        length="1"
+                        />
+
+                <property
+                        name="isUserful"
+                        type="java.lang.String"
+                        column="ISUSERFUL"
+                        length="1"
+                        />
+
+                <property
+                        name="depth"
+                        type="int"
+                        column="DEPTH"
+                        length="22"
+                        />
+
+                <property
+                        name="isOpenGuest"
+                        type="java.lang.String"
+                        column="ISOPENGUEST"
+                        length="1"
+                        />
+
+
+                <property
+                        name="displayBeginDate"
+                        type="java.sql.Date"
+                        column="DISPLAYBEGINDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="status"
+                        type="java.lang.String"
+                        column="STATUS"
+                        length="1"
+                        />
+
+                <property
+                        name="displayEndDate"
+                        type="java.sql.Date"
+                        column="DISPLAYENDDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="isView"
+                        type="java.lang.String"
+                        column="ISVIEW"
+                        length="1"
+                        />
+                <property
+                        name="modifyDate"
+                        type="java.sql.Date"
+                        column="MODIFYDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="remark1"
+                        type="java.lang.String"
+                        column="REMARK1"
+                        length="255"
+                        />
+                <property
+                        name="createDate"
+                        type="java.sql.Date"
+                        column="CREATEDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="remark"
+                        type="java.lang.String"
+                        column="REMARK"
+                        length="150"
+                        />
+
+
+                <property
+                        name="orderIndex"
+                        type="int"
+                        column="ORDERINDEX"
+                        length="22"
+                        />
+
+
+                <property
+                        name="remark2"
+                        type="java.lang.String"
+                        column="REMARK2"
+                        length="150"
+                        />
+
+                <property
+                        name="remark3"
+                        type="java.lang.String"
+                        column="REMARK3"
+                        length="150"
+                        />
+
+                <property
+                        name="remark4"
+                        type="java.lang.String"
+                        column="REMARK4"
+                        length="150"
+                        />
+
+                <property
+                        name="remark5"
+                        type="java.lang.String"
+                        column="REMARK5"
+                        length="150"
+                        />
+
+                <property
+                        name="remark6"
+                        type="java.lang.String"
+                        column="REMARK6"
+                        length="150"
+                        />
+
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

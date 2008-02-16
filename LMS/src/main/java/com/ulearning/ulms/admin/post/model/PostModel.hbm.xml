@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.admin.post.model.PostModel"
+               table="TM_Post_TAB">
+
+                <id name="postID" type="int" column="postid">
+                        <generator class="sequence">
+                                <param name="sequence">postID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="aspID"
+                        type="int"
+                        column="aspID"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <property
+                        name="parentID"
+                        type="int"
+                        column="PARENTID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="name"
+                        type="java.lang.String"
+                        column="NAME"
+                        not-null="true"
+                        length="500"
+                        />
+                <property
+                        name="postType"
+                        type="java.lang.String"
+                        column="postType"
+                        length="500"
+                        />
+                <property
+                        name="postLevel"
+                        type="java.lang.String"
+                        column="postLevel"
+                        length="500"
+                        />
+                <property
+                        name="require"
+                        type="java.lang.String"
+                        column="require"
+                        length="4000"
+                        />
+                <property
+                        name="describe"
+                        type="java.lang.String"
+                        column="describe"
+                        length="4000"
+                        />
+                <property
+                        name="skill"
+                        type="java.lang.String"
+                        column="skill"
+                        length="4000"
+                        />
+                <property
+                        name="remark1"
+                        type="java.lang.String"
+                        column="remark1"
+                        length="500"
+                        />
+                <property
+                        name="remark2"
+                        type="java.lang.String"
+                        column="remark2"
+                        length="500"
+                        />
+                <property
+                        name="remark3"
+                        type="java.lang.String"
+                        column="remark3"
+                        length="500"
+                        />
+                <property
+                        name="remark4"
+                        type="java.lang.String"
+                        column="remark4"
+                        length="500"
+                        />
+                <property
+                        name="remark5"
+                        type="java.lang.String"
+                        column="remark5"
+                        length="500"
+                        />
+        </class>
+</hibernate-mapping>

@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.tools.schoolwork.model.TeaWorkModel"
+                table="T_PostilSW_Tab">
+
+                <id
+                        name="postilSWId"
+                        type="int"
+                        column="POSTILSWID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">postilSWId</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="userswId"
+                        type="int"
+                        column="USERSWID"
+                        length="5"
+                        />
+
+                <property
+                        name="userId"
+                        type="int"
+                        column="USERID"
+                        not-null="true"
+                        length="10"
+                        />
+
+                <property
+                        name="link"
+                        type="java.lang.String"
+                        column="LINK"
+                        length="255"
+                        />
+
+                <property
+                        name="linkTitle"
+                        type="java.lang.String"
+                        column="LINKTITLE"
+                        length="200"
+                        />
+
+                <property
+                        name="commment"
+                        type="java.lang.String"
+                        column="COMMMENT"
+                        length="500"
+                        />
+
+                <property
+                        name="score"
+                        type="java.lang.String"
+                        column="SCORE"
+                        length="10"
+                        />
+
+                <property
+                        name="isExisitError"
+                        type="java.lang.String"
+                        column="ISEXISITERROR"
+                        length="1"
+                        />
+
+                <property
+                        name="createDate"
+                        type="java.util.Date"
+                        column="CREATEDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="modifyDate"
+                        type="java.util.Date"
+                        column="MODIFYDATE"
+                        length="7"
+                        />
+
+
+                <!-- Associations -->
+
+        </class>
+</hibernate-mapping>

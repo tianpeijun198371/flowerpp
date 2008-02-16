@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.content.model.ContentConfigModel"
+                table="R_CONTENTCONFIG_TAB"
+                >
+
+                <composite-id name="comp_id" class="com.ulearning.ulms.content.model.ContentConfigModelPK">
+                        <key-property
+                                name="type"
+                                column="TYPE"
+                                type="java.lang.String"
+                                length="1"
+                                />
+                        <key-property
+                                name="relationID"
+                                column="RELATIONID"
+                                type="int"
+                                length="22"
+                                />
+                </composite-id>
+
+                <property
+                        name="contentConfigID"
+                        type="int"
+                        column="CONTENTCONFIGID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="isAllowedCommonUserUpload"
+                        type="java.lang.String"
+                        column="ISALLOWEDCOMMONUSERUPLOAD"
+                        length="1"
+                        />
+                <property
+                        name="isLimitSpace"
+                        type="java.lang.String"
+                        column="ISLIMITSPACE"
+                        length="1"
+                        />
+                <property
+                        name="warningSpaceSize"
+                        type="java.lang.String"
+                        column="WARNINGSPACESIZE"
+                        length="38"
+                        />
+                <property
+                        name="limitSpaceSize"
+                        type="java.lang.String"
+                        column="LIMITSPACESIZE"
+                        length="38"
+                        />
+                <property
+                        name="isLimitUploadFile"
+                        type="java.lang.String"
+                        column="ISLIMITUPLOADFILE"
+                        length="1"
+                        />
+                <property
+                        name="limitUploadFileSize"
+                        type="java.lang.String"
+                        column="LIMITUPLOADFILESIZE"
+                        length="38"
+                        />
+                <property
+                        name="createDate"
+                        type="java.util.Date"
+                        column="CREATEDATE"
+                        length="7"
+                        />
+                <property
+                        name="lastModDate"
+                        type="java.util.Date"
+                        column="LASTMODDATE"
+                        length="7"
+                        />
+                <property
+                        name="remark1"
+                        type="java.lang.String"
+                        column="REMARK1"
+                        length="150"
+                        />
+                <property
+                        name="remark2"
+                        type="java.lang.String"
+                        column="REMARK2"
+                        length="150"
+                        />
+                <property
+                        name="remark3"
+                        type="java.lang.String"
+                        column="REMARK3"
+                        length="150"
+                        />
+                <property
+                        name="status"
+                        type="java.lang.String"
+                        column="STATUS"
+                        length="1"
+                        />
+
+                <!-- Associations -->
+                <!-- derived association(s) for compound key -->
+                <!-- end of derived association(s) -->
+
+
+        </class>
+</hibernate-mapping>

@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.blog.form.ArticleForm"
+                table="T_article_Tab">
+
+                <id name="articleId" type="int" column="ARTICLEID">
+                        <generator class="sequence">
+                                <param name="assigned">articleId</param>
+                        </generator>
+                </id>
+
+
+                <property
+                        name="categoryId"
+                        type="int"
+                        column="CATEGORYID"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <property
+                        name="type"
+                        type="int"
+                        column="TYPE"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <property
+                        name="accountId"
+                        type="int"
+                        column="ACCOUNTID"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <property
+                        name="title"
+                        type="java.lang.String"
+                        column="TITLE"
+                        not-null="true"
+                        length="255"
+                        />
+
+                <property
+                        name="summary"
+                        type="java.lang.String"
+                        column="SUMMARY"
+                        length="255"
+                        />
+
+                <property
+                        name="visiable"
+                        type="int"
+                        column="VISIBLE"
+                        not-null="true"
+                        length="22"
+                        />
+
+
+                <property
+                        name="createdDate"
+                        type="java.util.Date"
+                        column="CREATEDDATE"
+                        not-null="true"
+                        length="7"
+                        />
+
+                <property
+                        name="updatedDate"
+                        type="java.util.Date"
+                        column="UPDATEDDATE"
+                        not-null="true"
+                        length="7"
+                        />
+
+                <property
+                        name="webVisit"
+                        type="int"
+                        column="WEBVISITS"
+                        length="22"
+                        />
+
+                <property
+                        name="rssVisit"
+                        type="int"
+                        column="RSSVISITS"
+                        length="22"
+                        />
+                <property
+                        name="feedBacks"
+                        type="int"
+                        column="FEEDBACKS"
+                        length="22"
+                        />
+
+                <property
+                        name="content"
+                        type="java.lang.String"
+                        column="CONTENT"
+                        length="8000"
+                        />
+
+                <property
+                        name="inclosure"
+                        type="java.lang.String"
+                        column="INCLOSURE"
+                        length="255"
+                        />
+
+                <property
+                        name="inclosurepath"
+                        type="java.lang.String"
+                        column="INCLOSUREPATH"
+                        length="255"
+                        />
+
+        </class>
+</hibernate-mapping>

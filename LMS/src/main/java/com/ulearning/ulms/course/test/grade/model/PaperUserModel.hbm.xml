@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.course.test.grade.model.PaperUserModel"
+                table="T_PAPERUSER_TAB"
+                >
+
+                <composite-id name="comp_id" class="com.ulearning.ulms.course.test.grade.model.PaperUserModelPK">
+                        <key-property
+                                name="paperid"
+                                column="PAPERID"
+                                type="int"
+                                length="22"
+                                />
+                        <key-property
+                                name="userid"
+                                column="USERID"
+                                type="int"
+                                length="22"
+                                />
+                </composite-id>
+
+                <property
+                        name="type"
+                        type="int"
+                        column="TYPE"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="subjective"
+                        type="float"
+                        column="SUBJECTIVE"
+                        length="8"
+                        />
+                <property
+                        name="objective"
+                        type="float"
+                        column="OBJECTIVE"
+                        length="8"
+                        />
+                <property
+                        name="grade"
+                        type="float"
+                        column="GRADE"
+                        length="8"
+                        />
+                <property
+                        name="status"
+                        type="int"
+                        column="STATUS"
+                        length="22"
+                        />
+                <property
+                        name="starttime"
+                        type="java.util.Date"
+                        column="STARTTIME"
+                        length="7"
+                        />
+                <property
+                        name="endtime"
+                        type="java.util.Date"
+                        column="ENDTIME"
+                        length="7"
+                        />
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="255"
+                        />
+                <property
+                        name="desc1"
+                        type="java.lang.String"
+                        column="DESC1"
+                        length="100"
+                        />
+                <property
+                        name="desc2"
+                        type="java.lang.String"
+                        column="DESC2"
+                        length="100"
+                        />
+                <property
+                        name="desc3"
+                        type="java.lang.String"
+                        column="DESC3"
+                        length="100"
+                        />
+                <property
+                        name="desc4"
+                        type="java.lang.String"
+                        column="DESC4"
+                        length="100"
+                        />
+        </class>
+</hibernate-mapping>

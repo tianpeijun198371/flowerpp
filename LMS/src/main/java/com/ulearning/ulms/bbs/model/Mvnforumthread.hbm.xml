@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+<class name="com.ulearning.ulms.bbs.model.Mvnforumthread" schema="DB2ADMIN" table="MVNFORUMTHREAD">
+<id column="THREADID" name="threadid" type="int">
+<generator class="native" >
+                <param name="sequence">threadid</param>
+        </generator>
+</id>
+<property column="FORUMID" length="10" name="forumid" not-null="true" type="java.lang.Integer"/>
+<property column="MEMBERNAME" length="30" name="membername" not-null="true" type="java.lang.String"/>
+<property column="LASTPOSTMEMBERNAME" length="30" name="lastpostmembername" not-null="true" type="java.lang.String"/>
+<property column="THREADTOPIC" length="250" name="threadtopic" not-null="true" type="java.lang.String"/>
+<property column="THREADBODY" length="32700" name="threadbody" not-null="true" type="java.lang.String"/>
+<property column="THREADVOTECOUNT" length="10" name="threadvotecount" not-null="true" type="java.lang.Integer"/>
+<property column="THREADVOTETOTALSTARS" length="10" name="threadvotetotalstars" not-null="true" type="java.lang.Integer"/>
+<property column="THREADCREATIONDATE" length="26" name="threadcreationdate" not-null="true" type="java.util.Date"/>
+<property column="THREADLASTPOSTDATE" length="26" name="threadlastpostdate" not-null="true" type="java.util.Date"/>
+<property column="THREADTYPE" length="10" name="threadtype" not-null="true" type="java.lang.Integer"/>
+<property column="THREADOPTION" length="10" name="threadoption" not-null="true" type="java.lang.Integer"/>
+<property column="THREADSTATUS" length="10" name="threadstatus" not-null="true" type="java.lang.Integer"/>
+<property column="THREADHASPOLL" length="10" name="threadhaspoll" not-null="true" type="java.lang.Integer"/>
+<property column="THREADVIEWCOUNT" length="10" name="threadviewcount" not-null="true" type="java.lang.Integer"/>
+<property column="THREADREPLYCOUNT" length="10" name="threadreplycount" not-null="true" type="java.lang.Integer"/>
+<property column="THREADICON" length="10" name="threadicon" not-null="true" type="java.lang.String"/>
+<property column="THREADDURATION" length="10" name="threadduration" not-null="true" type="java.lang.Integer"/>
+<property column="THREADATTACHCOUNT" length="10" name="threadattachcount" not-null="true" type="java.lang.Integer"/>
+</class>
+</hibernate-mapping>

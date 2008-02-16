@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.doc.doccontent.model.DocContentModel"
+                table="T_DOCCONTENT_TAB"
+                >
+
+                <id
+                        name="docID"
+                        type="java.lang.Integer"
+                        column="DOCID"
+                        >
+                        <generator class="assigned"/>
+                </id>
+
+                <property
+                        name="docContent"
+                        type="java.lang.String"
+                        column="DOCCONTENT"
+                        length="2000"
+                        />
+                <property
+                        name="docLinkTitle"
+                        type="java.lang.String"
+                        column="DOCLINKTITLE"
+                        length="200"
+                        />
+                <property
+                        name="docLink"
+                        type="java.lang.String"
+                        column="DOCLINK"
+                        length="255"
+                        />
+
+                <!-- Associations -->
+
+                <!-- bi-directional one-to-one association to TdocumentTab -->
+                <!--
+                <one-to-one
+                    name="DocumentModel"
+                    class="com.ulearning.ulms.tools.doc.document.model.DocumentModel"
+                    outer-join="auto"
+                    constrained="true"
+                />
+                -->
+
+        </class>
+</hibernate-mapping>

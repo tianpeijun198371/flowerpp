@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.tools.schoolwork.model.SchoolWorkModel"
+                table="T_SchoolWork_Tab">
+
+                <id
+                        name="swID"
+                        type="int"
+                        column="SWID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">swID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="userId"
+                        type="java.lang.String"
+                        column="USERID"
+                        length="50"
+                        />
+
+                <property
+                        name="title"
+                        type="java.lang.String"
+                        column="TITLE"
+                        length="500"
+                        />
+
+                <property
+                        name="swKey"
+                        type="java.lang.String"
+                        column="SWKEY"
+                        length="300"
+                        />
+
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="4000"
+                        />
+
+                <property
+                        name="orderIndex"
+                        type="int"
+                        column="ORDERINDEX"
+                        length="5"
+                        />
+
+                <property
+                        name="swLink"
+                        type="java.lang.String"
+                        column="SWLINK"
+                        length="255"
+                        />
+
+                <property
+                        name="answerLink"
+                        type="java.lang.String"
+                        column="ANSWERLINK"
+                        length="255"
+                        />
+
+                <property
+                        name="answerLinkTitle"
+                        type="java.lang.String"
+                        column="ANSWERLINKTITLE"
+                        length="200"
+                        />
+
+                <property
+                        name="swLinkTitle"
+                        type="java.lang.String"
+                        column="SWLINKTITLE"
+                        length="200"
+                        />
+
+                <property
+                        name="isAvailable"
+                        type="java.lang.String"
+                        column="ISAVAILABLE"
+                        length="1"
+                        />
+
+                <property
+                        name="isPublishAnswer"
+                        type="java.lang.String"
+                        column="ISPUBLISHANSWER"
+                        length="1"
+                        />
+
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="2"
+                        />
+
+                <property
+                        name="parentID"
+                        type="int"
+                        column="PARENTID"
+                        not-null="true"
+                        length="10"
+                        />
+
+                <property
+                        name="relationID"
+                        type="int"
+                        column="RELATIONID"
+                        length="10"
+                        />
+
+                <property
+                        name="relationName"
+                        type="java.lang.String"
+                        column="RELATIONNAME"
+                        length="150"
+                        />
+
+                <property
+                        name="createDate"
+                        type="java.util.Date"
+                        column="CREATEDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="modifyDate"
+                        type="java.util.Date"
+                        column="MODIFYDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="isMessage"
+                        type="java.lang.String"
+                        column="ISMESSAGE"
+                        length="1"
+                        />
+                <property
+                        name="isMail"
+                        type="java.lang.String"
+                        column="ISMAIL"
+                        length="1"
+                        />
+
+                <property
+                        name="isUserful"
+                        type="java.lang.String"
+                        column="ISUSERFUL"
+                        length="1"
+                        />
+
+                <property
+                        name="isOpenGuest"
+                        type="java.lang.String"
+                        column="ISOPENGUEST"
+                        length="1"
+                        />
+
+                <property
+                        name="isView"
+                        type="java.lang.String"
+                        column="ISVIEW"
+                        length="1"
+                        />
+
+                <property
+                        name="depth"
+                        type="int"
+                        column="DEPTH"
+                        length="32"
+                        />
+
+                <property
+                        name="status"
+                        type="java.lang.String"
+                        column="STATUS"
+                        length="1"
+                        />
+
+                <property
+                        name="displayBeginDate"
+                        type="java.util.Date"
+                        column="DISPLAYBEGINDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="displayEndDate"
+                        type="java.util.Date"
+                        column="DISPLAYENDDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="remark"
+                        type="java.lang.String"
+                        column="REMARK"
+                        length="150"
+                        />
+
+                <property
+                        name="remark1"
+                        type="java.lang.String"
+                        column="REMARK1"
+                        length="150"
+                        />
+
+                <property
+                        name="remark2"
+                        type="java.lang.String"
+                        column="REMARK2"
+                        length="150"
+                        />
+
+                <property
+                        name="remark3"
+                        type="java.lang.String"
+                        column="REMARK3"
+                        length="150"
+                        />
+
+                <property
+                        name="remark4"
+                        type="java.lang.String"
+                        column="REMARK4"
+                        length="150"
+                        />
+
+                <property
+                        name="remark5"
+                        type="java.lang.String"
+                        column="REMARK5"
+                        length="150"
+                        />
+
+                <property
+                        name="remark6"
+                        type="java.lang.String"
+                        column="REMARK6"
+                        length="150"
+                        />
+
+                <!-- Associations -->
+
+        </class>
+</hibernate-mapping>

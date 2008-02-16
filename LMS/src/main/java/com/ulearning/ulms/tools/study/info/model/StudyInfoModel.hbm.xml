@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class name="com.ulearning.ulms.tools.study.info.model.StudyInfoModel"
+               table="T_StudyInfo_TAB">
+
+                <id name="studyInfoID" type="int" column="StudyInfoID">
+                        <generator class="sequence">
+                                <param name="sequence">studyInfoID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="orgID"
+                        type="int"
+                        />
+               <property
+                        name="userID"
+                        type="int"
+                        />
+                <property
+                        name="courseID"
+                        type="int"
+                        />
+                <property
+                        name="type"
+                        type="int"
+                        />
+                <property
+                        name="examType"
+                        type="int"
+                        />
+                 <property
+                        name="testType"
+                        type="int"
+                        />
+                <property
+                        name="year"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="grade"
+                        type="int"
+                        />
+                <property
+                        name="Subject"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="Name"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="School"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="Book"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="Mail"
+                        type="java.lang.String"
+                        />
+                 <property
+                        name="Card"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="Sex"
+                        type="java.lang.String"
+                        />
+
+                <property
+                        name="Phone"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="Cellphone"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="Address"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="Postalcode"
+                        type="java.lang.String"
+                        />
+               <property
+                        name="TingLi"
+                        type="float"
+                        />
+                <property
+                        name="TingLiScore"
+                        type="float"
+                        />
+                <property
+                        name="TingLiPingYu"
+                        type="java.lang.String"
+                        />
+
+                 <property
+                        name="YuYin"
+                        type="float"
+                        />
+                <property
+                        name="YuYinScore"
+                        type="float"
+                        />
+                <property
+                        name="YuYinPingYu"
+                        type="java.lang.String"
+                        />
+
+               <property
+                        name="CiHui"
+                        type="float"
+                        />
+                <property
+                        name="CiHuiScore"
+                        type="float"
+                        />
+                <property
+                        name="CiHuiPingYu"
+                        type="java.lang.String"
+                        />
+
+               <property
+                        name="HuiHua"
+                        type="float"
+                        />
+                <property
+                        name="HuiHuaScore"
+                        type="float"
+                        />
+                <property
+                        name="HuiHuaPingYu"
+                        type="java.lang.String"
+                        />
+
+                <property
+                        name="ZongHe"
+                        type="float"
+                        />
+                <property
+                        name="ZongHeScore"
+                        type="float"
+                        />
+                <property
+                        name="ZongHePingYu"
+                        type="java.lang.String"
+                        />
+
+               <property
+                        name="YuFa"
+                        type="float"
+                        />
+                <property
+                        name="YuFaScore"
+                        type="float"
+                        />
+                <property
+                        name="YuFaPingYu"
+                        type="java.lang.String"
+                        />
+
+               <property
+                        name="YueDu"
+                        type="float"
+                        />
+                <property
+                        name="YueDuScore"
+                        type="float"
+                        />
+                <property
+                        name="YueDuPingYu"
+                        type="java.lang.String"
+                        />
+
+               <property
+                        name="XieZuo"
+                        type="float"
+                        />
+                <property
+                        name="XieZuoScore"
+                        type="float"
+                        />
+                <property
+                        name="XieZuoPingYu"
+                        type="java.lang.String"
+                        />
+                 <property
+                        name="zongChengJi"
+                        type="float"
+                         />
+                <property
+                        name="zongChengJiScore"
+                        type="float"
+                        />
+                <property
+                        name="zongPingYu"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="luRuRen"
+                        type="java.lang.String"
+                        />
+                 <property
+                        name="luRuDate"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="createDate"
+                        type="java.sql.Date"
+                        />
+                <property
+                        name="zhengShu"
+                        type="int"
+                        />
+                <property
+                        name="zhengShuNeiRong"
+                        type="java.lang.String"
+                        />
+
+
+
+                <property
+                        name="Description"
+                        type="java.lang.String"
+                        />
+               <property
+                        name="Remark1"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="Remark2"
+                        type="java.lang.String"
+                        />
+               <property
+                        name="Remark3"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="Remark4"
+                        type="java.lang.String"
+                        />
+               <property
+                        name="Remark5"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="Remark6"
+                        type="java.lang.String"
+                        />
+               <property
+                        name="Remark7"
+                        type="java.lang.String"
+                        />
+                <property
+                        name="Remark8"
+                        type="java.lang.String"
+                        />
+
+                <!-- Associations -->
+        </class>
+</hibernate-mapping>
+

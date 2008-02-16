@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.match.model.MatchModel"
+                table="M_MATCH_TAB"
+                >
+
+                <id
+                        name="matchid"
+                        type="int"
+                        column="MATCHID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">MATCHID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="1"
+                        >
+                </property>
+
+                <property
+                        name="relationid"
+                        type="int"
+                        column="RELATIONID"
+                        not-null="true"
+                        length="22"
+                        >
+                </property>
+
+                <property
+                        name="name"
+                        type="java.lang.String"
+                        column="NAME"
+                        not-null="true"
+                        length="500"
+                        >
+                </property>
+
+                <property
+                        name="status"
+                        type="java.lang.String"
+                        column="STATUS"
+                        length="1"
+                        >
+                </property>
+
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

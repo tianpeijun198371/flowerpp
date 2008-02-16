@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.admin.colsignup.colsigndetail.model.ColSignDetailModel"
+                table="C_COLSIGNDETAIL_TAB"
+                >
+
+                <id
+                        name="colSignDetailID"
+                        type="int"
+                        column="COLSIGNDETAILID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">ColSignDetailID</param>
+                        </generator>
+
+                </id>
+
+                <property
+                        name="colSignID"
+                        type="int"
+                        column="COLSIGNID"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <property
+                        name="relationID"
+                        type="int"
+                        column="RELATIONID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="typeID"
+                        type="int"
+                        column="TYPEID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="desc1"
+                        type="java.lang.String"
+                        column="DESC1"
+                        length="20"
+                        />
+
+                <!-- Associations -->
+
+        </class>
+</hibernate-mapping>

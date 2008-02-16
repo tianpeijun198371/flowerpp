@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.finance.model.FpayoutTypeModel"
+                table="F_PayoutType_TAB"
+                >
+
+
+                <id
+                        name="payoutId"
+                        type="int"
+                        column="payoutID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">payoutId</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="payoutName"
+                        type="java.lang.String"
+                        column="payoutName"
+                        not-null="true"
+                        unique="true"
+                        length="50"
+                        />
+                <property
+                        name="payoutType"
+                        type="int"
+                        column="payoutType"
+                        length="10"
+                        />
+                <property
+                        name="payoutRemark1"
+                        type="java.lang.String"
+                        column="payoutRemark1"
+                        length="150"
+                        />
+                <property
+                        name="payoutReamrk2"
+                        type="java.lang.String"
+                        column="payoutReamrk2"
+                        length="150"
+                        />
+
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

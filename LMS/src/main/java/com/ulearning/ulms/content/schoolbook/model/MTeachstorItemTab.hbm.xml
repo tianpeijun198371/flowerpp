@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.content.schoolbook.model.MTeachstorItemTab" table="M_TEACHSTOR_ITEM_TAB">
+                <id column="TCITEMID" name="id" type="long">
+                        <generator class="sequence">
+                                <param name="sequence">TCITEMID</param>
+                        </generator>
+                </id>
+                <property column="TCMAINID" length="10" name="tcmainid" type="integer"/>
+                <property column="BSIFID" length="10" name="bsifid" type="integer"/>
+                <property column="BSIFBOOKNAME" length="200" name="bsifbookname" type="string"/>
+                <property column="TCITEMPRICE" length="6" name="tcitemprice" type="float"/>
+                <property column="TCITEMQUANTITY" length="6" name="tcitemquantity" type="integer"/>
+                <property column="TCITEMTOTAL" length="6" name="tcitemtotal" type="float"/>
+                <property column="TCITEMTCLIENTID" length="10" name="tcitemtclientid" type="integer"/>
+                <property column="TCITEMTCLIENTNAME" length="100" name="tcitemtclientname" type="string"/>
+                <property column="TCITEMSUPPLIERID" length="10" name="tcitemsupplierid" type="integer"/>
+                <property column="TCITEMSUPPLIERNAME" length="100" name="tcitemsuppliername" type="string"/>
+                <property column="TCITEMSOURCEID" length="10" name="tcitemsourceid" type="integer"/>
+                <property column="TCITEMSOURCENAME" length="100" name="tcitemsourcename" type="string"/>
+        </class>
+</hibernate-mapping>

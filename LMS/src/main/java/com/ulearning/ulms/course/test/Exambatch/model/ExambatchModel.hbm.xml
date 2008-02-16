@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+
+        <class
+                name="com.ulearning.ulms.course.test.Exambatch.model.ExambatchModel"
+                table="T_EXAMBATCH_TAB"
+                >
+
+                <id
+                        name="exambatchID"
+                        column="EXAMBATCHID"
+                        type="int"
+                        length="22"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">ExamBatchID</param>
+                        </generator>
+                </id>
+
+
+                <property
+                        name="paperID"
+                        column="PAPERID"
+                        type="int"
+                        length="22"
+                        />
+
+                <property
+                        name="classID"
+                        column="CLASSID"
+                        type="int"
+                        length="22"
+                        />
+
+                <property
+                        name="creatuserID"
+                        column="CREATUSERID"
+                        type="int"
+                        length="22"
+                        />
+
+                <property
+                        name="exambatchname"
+                        column="EXAMBATCHNAME"
+                        type="java.lang.String"
+                        length="100"
+                        />
+
+                <property
+                        name="exambegintime"
+                        column="EXAMBEGINTIME"
+                        type="java.util.Date"
+                        length="7"
+                        />
+
+                <property
+                        name="examendtime"
+                        column="EXAMENDTIME"
+                        type="java.util.Date"
+                        length="7"
+                        />
+
+                <property
+                        name="remark1"
+                        column="REMARK1"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="remark2"
+                        column="REMARK2"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="remark3"
+                        column="REMARK3"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="remark4"
+                        column="REMARK4"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="remark5"
+                        column="REMARK5"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+                <property
+                        name="remark6"
+                        column="REMARK6"
+                        type="java.lang.String"
+                        length="200"
+                        />
+
+        </class>
+
+
+</hibernate-mapping>

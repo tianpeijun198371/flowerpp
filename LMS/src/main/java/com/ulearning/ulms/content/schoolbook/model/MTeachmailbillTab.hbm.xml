@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.content.schoolbook.model.MTeachmailbillTab"
+               table="M_TEACHMAILBILL_TAB">
+
+                <id column="TCMLID" name="tcmlid" type="int">
+
+                        <generator class="sequence">
+                                <param name="sequence">tcmlid</param>
+                        </generator>
+
+                </id>
+                <property column="BSIFID" length="10" name="bsifid" type="int"/>
+                <property column="BSIFBOOKNAME" length="200" name="bsifbookname" type="java.lang.String"/>
+                <property column="TCMLDEPT" length="100" name="tcmldept" type="java.lang.String"/>
+                <property column="TCMLMAN" length="100" name="tcmlman" type="java.lang.String"/>
+                <property column="TCMLMAILPRICE" length="6" name="tcmlmailprice" type="double"/>
+                <property column="TCMLQUANTITY" length="10" name="tcmlquantity" type="int"/>
+                <property column="TCMLTOTAL" length="6" name="tcmltotal" type="double"/>
+                <property column="TCMLPHONE" length="40" name="tcmlphone" type="java.lang.String"/>
+                <property column="TCMLOPERATOR" length="50" name="tcmloperator" type="java.lang.String"/>
+                <property column="REMARK1" length="50" name="remark1" type="java.lang.String"/>
+                <property column="REMARK2" length="50" name="remark2" type="java.lang.String"/>
+                <property column="REMARK3" length="50" name="remark3" type="java.lang.String"/>
+                <property column="REMARK4" length="50" name="remark4" type="java.lang.String"/>
+                <property column="REMARK5" length="50" name="remark5" type="java.lang.String"/>
+        </class>
+</hibernate-mapping>

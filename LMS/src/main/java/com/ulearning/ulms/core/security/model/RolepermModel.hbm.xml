@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.core.security.model.RolepermModel"
+                table="SEC_ROLEPERM_TAB"
+                >
+
+                <composite-id name="comp_id" class="com.ulearning.ulms.core.security.model.RolepermModelPK">
+                        <key-property
+                                name="moduleid"
+                                column="MODULEID"
+                                type="int"
+                                length="22"
+                                />
+                        <key-property
+                                name="roleid"
+                                column="ROLEID"
+                                type="int"
+                                length="22"
+                                />
+                        <key-property
+                                name="permitid"
+                                column="PERMITID"
+                                type="int"
+                                length="22"
+                                />
+                </composite-id>
+
+                <property
+                        name="orderindex"
+                        type="int"
+                        column="ORDERINDEX"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="relationid"
+                        type="int"
+                        column="RELATIONID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="type"
+                        type="int"
+                        column="TYPE"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="status"
+                        type="int"
+                        column="STATUS"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <!-- Associations -->
+                <!-- derived association(s) for compound key -->
+                <!-- bi-directional many-to-one association to SecRoleTab -->
+
+
+                <!-- end of derived association(s) -->
+
+
+        </class>
+</hibernate-mapping>

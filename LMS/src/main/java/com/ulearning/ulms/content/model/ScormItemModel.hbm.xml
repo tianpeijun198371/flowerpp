@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.content.model.ScormItemModel"
+                table="R_SCORMITEM_TAB"
+                >
+
+                <id
+                        name="itemID"
+                        type="int"
+                        column="ITEMID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">itemID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="relationID"
+                        type="int"
+                        column="RELATIONID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        not-null="true"
+                        length="1"
+                        />
+                <property
+                        name="identifier"
+                        type="java.lang.String"
+                        column="IDENTIFIER"
+                        length="255"
+                        />
+                <property
+                        name="itemType"
+                        type="java.lang.String"
+                        column="ITEMTYPE"
+                        length="10"
+                        />
+                <property
+                        name="title"
+                        type="java.lang.String"
+                        column="TITLE"
+                        length="255"
+                        />
+                <property
+                        name="launch"
+                        type="java.lang.String"
+                        column="LAUNCH"
+                        length="255"
+                        />
+                <property
+                        name="parameterString"
+                        type="java.lang.String"
+                        column="PARAMETERSTRING"
+                        length="255"
+                        />
+                <property
+                        name="dataFromLms"
+                        type="java.lang.String"
+                        column="DATAFROMLMS"
+                        length="255"
+                        />
+                <property
+                        name="prerequisites"
+                        type="java.lang.String"
+                        column="PREREQUISITES"
+                        length="255"
+                        />
+                <property
+                        name="masteryScore"
+                        type="int"
+                        column="MASTERYSCORE"
+                        length="10"
+                        />
+                <property
+                        name="maxTimeAllowed"
+                        type="java.lang.String"
+                        column="MAXTIMEALLOWED"
+                        length="255"
+                        />
+                <property
+                        name="timeLimitAction"
+                        type="java.lang.String"
+                        column="TIMELIMITACTION"
+                        length="255"
+                        />
+                <property
+                        name="sequence"
+                        type="int"
+                        column="SEQUENCE"
+                        length="22"
+                        />
+                <property
+                        name="theLevel"
+                        type="int"
+                        column="THELEVEL"
+                        length="22"
+                        />
+                <property
+                        name="contentID"
+                        type="int"
+                        column="CONTENTID"
+                        not-null="true"
+                        length="22"
+                        />
+
+                <!-- Associations -->
+
+                <!-- bi-directional one-to-many association to RscormuserscoTab -->
+                <!--<set
+                    name="scormUserScoModels"
+                    lazy="true"
+                    inverse="true"
+                            cascade="none"
+                >
+                    <key>
+                        <column name="SCOID" />
+                    </key>
+                    <one-to-many
+                        class="com.ulearning.ulms.content.model.ScormUserScoModel"
+                    />
+                </set>-->
+                <!-- bi-directional many-to-one association to RcontentTab -->
+                <!--<many-to-one
+                    name="contentModel"
+                    class="com.ulearning.ulms.content.model.ContentModel"
+                    not-null="true"
+                >
+                    <column name="CONTENTID" />
+                </many-to-one>-->
+
+        </class>
+</hibernate-mapping>

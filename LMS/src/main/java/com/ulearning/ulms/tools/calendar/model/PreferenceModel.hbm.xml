@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.calendar.model.PreferenceModel"
+                table="T_CALUSERPREF_TAB"
+                >
+
+                <id
+                        name="userid"
+                        type="int"
+                        column="USERID"
+                        >
+                        <generator class="assigned"/>
+                </id>
+
+
+                <property
+                        name="loginview"
+                        type="int"
+                        column="LOGINVIEW"
+                        length="22"
+                        />
+                <property
+                        name="timezone"
+                        type="java.lang.String"
+                        column="TIMEZONE"
+                        length="10"
+                        />
+                <property
+                        name="firstdayofweek"
+                        type="int"
+                        column="FIRSTDAYOFWEEK"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="isviewlunarcalendar"
+                        type="java.lang.String"
+                        column="ISVIEWLUNARCALENDAR"
+                        length="1"
+                        />
+                <property
+                        name="hourstyle"
+                        type="java.lang.String"
+                        column="HOURSTYLE"
+                        length="1"
+                        />
+
+
+                <!-- Associations -->
+
+                <!-- bi-directional one-to-many association to UcustomconfigitemTab -->
+
+
+        </class>
+</hibernate-mapping>

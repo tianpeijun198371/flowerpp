@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.announcement.model.AnnouncementModel"
+                table="T_ANNOUNCEMENT_TAB"
+                >
+
+                <id
+                        name="announcementID"
+                        type="java.lang.Integer"
+                        column="ANNOUNCEMENTID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">AnnouncementID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="relationID"
+                        type="java.lang.Integer"
+                        column="RELATIONID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="userID"
+                        type="java.lang.Integer"
+                        column="USERID"
+                        not-null="true"
+                        length="22"
+                        />
+                <property
+                        name="username"
+                        type="java.lang.String"
+                        column="USERNAME"
+                        not-null="true"
+                        length="16"
+                        />
+                <property
+                        name="subject"
+                        type="java.lang.String"
+                        column="SUBJECT"
+                        not-null="true"
+                        length="60"
+                        />
+                <property
+                        name="message"
+                        type="java.lang.String"
+                        column="MESSAGE"
+                        length="3000"
+                        />
+                <property
+                        name="createdate"
+                        type="java.util.Date"
+                        column="CREATEDATE"
+                        length="7"
+                        />
+                <property
+                        name="modifydate"
+                        type="java.util.Date"
+                        column="MODIFYDATE"
+                        length="7"
+                        />
+                <property
+                        name="ispermanent"
+                        type="java.lang.String"
+                        column="ISPERMANENT"
+                        not-null="true"
+                        length="1"
+                        />
+                <property
+                        name="displaybegindate"
+                        type="java.util.Date"
+                        column="DISPLAYBEGINDATE"
+                        length="7"
+                        />
+                <property
+                        name="displayenddate"
+                        type="java.util.Date"
+                        column="DISPLAYENDDATE"
+                        length="7"
+                        />
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="1"
+                        />
+                <property
+                        name="texttype"
+                        type="java.lang.String"
+                        column="TEXTTYPE"
+                        not-null="true"
+                        length="1"
+                        />
+                <property
+                        name="link"
+                        type="java.lang.String"
+                        column="LINK"
+                        length="255"
+                        />
+
+                <!-- Associations -->
+
+
+        </class>
+</hibernate-mapping>

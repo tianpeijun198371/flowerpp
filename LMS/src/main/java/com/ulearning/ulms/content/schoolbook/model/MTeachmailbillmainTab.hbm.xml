@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="com.ulearning.ulms.content.schoolbook.model.MTeachmailbillmainTab"
+
+               table="M_TEACHMAILBILLMAIN_TAB">
+                <id column="TCMLID" name="tcmlid" type="int">
+
+                        <generator class="sequence">
+                                <param name="sequence">tcmlid</param>
+                        </generator>
+                </id>
+                <property column="TCMLLEVYDEPT" length="100" name="tcmllevydept" type="java.lang.String"/>
+                <property column="TCMLLEVYADDS" length="100" name="tcmllevyadds" type="java.lang.String"/>
+                <property column="TCMLLEVYOPERATOR" length="50" name="tcmllevyoperator" type="java.lang.String"/>
+                <property column="TCMLTOTAL" length="6" name="tcmltotal" type="double"/>
+                <property column="TCMLLEVYPHONE" length="40" name="tcmllevyphone" type="java.lang.String"/>
+                <property column="TCMLLEVYFAX" length="20" name="tcmllevyfax" type="java.lang.String"/>
+                <property column="TCMLLEVYMAILCODE" length="20" name="tcmllevymailcode" type="java.lang.String"/>
+                <property column="TCMLLEVYREM" length="10" name="tcmllevyrem" type="int"/>
+                <property column="TCMLMAN" length="50" name="tcmlman" type="java.lang.String"/>
+                <property column="TCMLPHONE" length="20" name="tcmlphone" type="java.lang.String"/>
+                <property column="TCMLFAX" length="20" name="tcmlfax" type="java.lang.String"/>
+                <property column="TCMLPOSTMAN" length="100" name="tcmlpostman" type="java.lang.String"/>
+                <property column="TCMLPOSTADDS" length="200" name="tcmlpostadds" type="java.lang.String"/>
+                <property column="TCMLPOSTCODE" length="20" name="tcmlpostcode" type="java.lang.String"/>
+                <property column="TCMLBANKCOM" length="200" name="tcmlbankcom" type="java.lang.String"/>
+                <property column="TCMLBANKNAME" length="200" name="tcmlbankname" type="java.lang.String"/>
+                <property column="TCMLBANKACCOUNT" length="200" name="tcmlbankaccount" type="java.lang.String"/>
+                <property column="REMARK1" length="50" name="remark1" type="java.lang.String"/>
+                <property column="REMARK2" length="50" name="remark2" type="java.lang.String"/>
+                <property column="REMARK3" length="50" name="remark3" type="java.lang.String"/>
+                <property column="REMARK4" length="50" name="remark4" type="java.lang.String"/>
+                <property column="REMARK5" length="50" name="remark5" type="java.lang.String"/>
+                <property column="TCMLDATE" length="26" name="tcmldate" type="java.util.Date"/>
+        </class>
+</hibernate-mapping>

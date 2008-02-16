@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.admin.sysconfig.model.AutoInformModel"
+                table="S_AUTOINFORM_TAB"
+                >
+
+                <composite-id name="comp_id" class="com.ulearning.ulms.admin.sysconfig.model.AutoInformModelPK">
+                        <key-property
+                                name="orgid"
+                                column="ORGID"
+                                type="int"
+                                length="22"
+                                />
+                        <key-property
+                                name="type"
+                                column="TYPE"
+                                type="int"
+                                length="22"
+                                />
+                </composite-id>
+
+                <property
+                        name="name"
+                        type="java.lang.String"
+                        column="NAME"
+                        length="30"
+                        />
+                <property
+                        name="ismail"
+                        type="java.lang.String"
+                        column="ISMAIL"
+                        not-null="true"
+                        length="1"
+                        />
+                <property
+                        name="ismsg"
+                        type="java.lang.String"
+                        column="ISMSG"
+                        not-null="true"
+                        length="1"
+                        />
+                <property
+                        name="istip"
+                        type="java.lang.String"
+                        column="ISTIP"
+                        length="1"
+                        />
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="50"
+                        />
+
+                <!-- Associations -->
+                <!-- derived association(s) for compound key -->
+                <!-- end of derived association(s) -->
+
+
+        </class>
+</hibernate-mapping>

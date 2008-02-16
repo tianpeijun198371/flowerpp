@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the MIDdlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/mIDdlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.tools.answerquestion.model.AQCatalogModel"
+                table="T_AQCatalog_Tab">
+
+                <id
+                        name="catalogID"
+                        type="int"
+                        column="CATALOGID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">CatalogID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="parentID"
+                        type="int"
+                        column="PARENTID"
+                        length="22"
+                        />
+                <property
+                        name="createDate"
+                        type="java.util.Date"
+                        column="CREATEDATE"
+                        length="7"
+                        />
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="2"
+                        />
+
+                <property
+                        name="catalogName"
+                        type="java.lang.String"
+                        column="CATALOGNAME"
+                        length="50"
+                        />
+
+
+                <property
+                        name="modifyDate"
+                        type="java.util.Date"
+                        column="MODIFYDATE"
+                        length="7"
+                        />
+
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="100"
+                        />
+        </class>
+</hibernate-mapping>

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+        <!--
+            Created by the Middlegen Hibernate plugin 2.1
+
+            http://boss.bekk.no/boss/middlegen/
+            http://www.hibernate.org/
+        -->
+
+        <class
+                name="com.ulearning.ulms.portal.fuctionconfig.model.FunctionConfigModel"
+                table="T_FuctionConfig_Tab"
+                >
+
+                <id
+                        name="fuctionID"
+                        type="java.lang.Integer"
+                        column="FUCTIONID"
+                        >
+                        <generator class="sequence">
+                                <param name="sequence">fuctionID</param>
+                        </generator>
+                </id>
+
+                <property
+                        name="name"
+                        type="java.lang.String"
+                        column="NAME"
+                        not-null="true"
+                        length="50"
+                        />
+                <property
+                        name="description"
+                        type="java.lang.String"
+                        column="DESCRIPTION"
+                        length="100"
+                        />
+                <property
+                        name="beginDate"
+                        type="java.util.Date"
+                        column="BEGINDATE"
+                        length="8"
+                        />
+                <property
+                        name="endDate"
+                        type="java.util.Date"
+                        column="ENDDATE"
+                        length="8"
+                        />
+                <property
+                        name="modifyDate"
+                        type="java.util.Date"
+                        column="MODIFYDATE"
+                        length="8"
+                        />
+
+                <property
+                        name="relationID"
+                        type="java.lang.String"
+                        column="RELATIONID"
+                        length="50"
+                        />
+                <property
+                        name="type"
+                        type="java.lang.String"
+                        column="TYPE"
+                        length="2"
+                        />
+                <property
+                        name="isAvailable"
+                        type="java.lang.String"
+                        column="ISAVAILABLE"
+                        length="1"
+                        />
+
+                <!-- Associations -->
+
+        </class>
+</hibernate-mapping>
